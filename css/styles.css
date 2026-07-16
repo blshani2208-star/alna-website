@@ -1,0 +1,206 @@
+/* ALNA — production stylesheet
+   Self-hosted Heebo (variable font, weight axis 100-900) replaces the
+   external Google Fonts request used in the original design. */
+
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/heebo-hebrew-variable.woff2") format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/heebo-math-variable.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/heebo-symbols-variable.woff2") format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+1F000-1F9FF, U+1FA00-1FBFF;
+}
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/heebo-latin-ext-variable.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/heebo-latin-variable.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --navy: #0F1D2E;
+  --navy-light: #1F364F;
+  --gold: #D4A017;
+  --gold-dark: #7f600d;
+  --cream: #F5F1EA;
+  --tan: #DCCBB3;
+  --neutral: #EAE6DF;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Heebo', sans-serif;
+  background: var(--cream);
+  color: var(--navy);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+::selection { background: var(--gold); color: var(--navy); }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; }
+
+/* skip link */
+.skip-link {
+  position: absolute;
+  right: 12px;
+  top: -60px;
+  background: var(--navy);
+  color: var(--cream);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  z-index: 200;
+  transition: top .2s;
+}
+.skip-link:focus { top: 12px; }
+
+.alna-eyebrow { display: flex; align-items: center; gap: 13px; margin-bottom: 20px; }
+.alna-eyebrow span:first-child { width: 30px; height: 2px; background: var(--gold); display: block; border-radius: 2px; }
+.alna-eyebrow span:last-child { font-size: 13px; font-weight: 700; letter-spacing: .16em; color: var(--gold-dark); }
+
+/* ---- hover states (replace the design tool's non-functional style-hover attr) ---- */
+.nav-link:hover { color: var(--navy) !important; }
+.cta-btn-primary:hover { transform: translateY(-2px); }
+.cta-btn-underline:hover { border-color: var(--gold) !important; }
+.challenge-card:hover { padding-right: 8px; }
+.footer-link:hover { color: var(--navy) !important; }
+.cta-outline-btn:hover { background: rgba(245,241,234,.08); }
+.faq-bar:hover { filter: brightness(1.08); }
+
+/* focus visibility for keyboard users */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---- keyframe animations (unchanged from the approved design) ---- */
+@keyframes alnaFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+@keyframes alnaBob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2.5px); } }
+@keyframes alnaWave { 0%,100% { transform: rotate(-4deg); } 50% { transform: rotate(7deg); } }
+@keyframes alnaBottleneck { 0%,16% { opacity: .3; transform: scale(.8); } 32%,55% { opacity: 1; transform: scale(1.14); } 72%,100% { opacity: .3; transform: scale(.8); } }
+@keyframes alnaWalk1 {
+  0% { transform: translate(508px,286px); opacity: 1; }
+  22% { transform: translate(408px,286px); }
+  34% { transform: translate(330px,250px); }
+  48% { transform: translate(250px,212px); }
+  62% { transform: translate(178px,182px); }
+  80% { transform: translate(104px,154px); }
+  92% { transform: translate(46px,126px); opacity: 1; }
+  97% { opacity: 0; }
+  100% { transform: translate(46px,126px); opacity: 0; }
+}
+@keyframes alnaData1 { 0% { transform: translate(496px,138px); opacity: 0; } 28% { opacity: 1; } 100% { transform: translate(322px,250px); opacity: 0; } }
+@keyframes alnaData2 { 0% { transform: translate(524px,232px); opacity: 0; } 28% { opacity: 1; } 100% { transform: translate(322px,250px); opacity: 0; } }
+@keyframes alnaData3 { 0% { transform: translate(470px,300px); opacity: 0; } 28% { opacity: 1; } 100% { transform: translate(322px,250px); opacity: 0; } }
+@keyframes alnaScan { 0% { transform: translateY(-30px); opacity: 0; } 12% { opacity: .9; } 88% { opacity: .9; } 100% { transform: translateY(330px); opacity: 0; } }
+@keyframes alnaStamp { 0%,100% { transform: scale(1) rotate(-8deg); } 50% { transform: scale(1.1) rotate(-8deg); } }
+@keyframes alnaNodePulse { 0%,100% { opacity: .55; transform: scale(.9); } 50% { opacity: 1; transform: scale(1.15); } }
+@keyframes alnaSpin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
+}
+
+/* ---- FAQ accordion ---- */
+.faq-item { border-top: 1px solid #e5ded0; padding: 16px 0; }
+.faq-question {
+  all: unset; cursor: pointer; display: flex; width: 100%;
+  align-items: center; justify-content: space-between; gap: 12px;
+  font-family: 'Heebo', sans-serif;
+}
+.faq-question-text { font-size: 16px; font-weight: 600; color: var(--navy); text-align: right; }
+.faq-icon { font-size: 15px; color: var(--gold-dark); flex-shrink: 0; }
+.faq-answer { font-size: 14.5px; line-height: 1.62; color: #5a6470; margin-top: 10px; display: none; }
+.faq-item.is-open .faq-answer { display: block; }
+.faq-item.is-open .faq-icon { transform: translateY(1px); }
+
+.faq-bar {
+  all: unset; cursor: pointer; pointer-events: auto; background: var(--navy);
+  color: var(--cream); padding: 13px 26px; border-radius: 14px 14px 0 0;
+  display: flex; align-items: center; gap: 10px;
+  box-shadow: 0 -10px 26px rgba(0,0,0,.2); font-family: 'Heebo', sans-serif;
+}
+.faq-backdrop {
+  position: fixed; inset: 0; background: rgba(15,29,46,.55); z-index: 75;
+  display: none;
+}
+.faq-panel {
+  position: fixed; bottom: 56px; right: 0; left: 0; z-index: 78;
+  max-width: 720px; margin: 0 auto; background: var(--cream);
+  border-radius: 20px 20px 0 0; box-shadow: 0 -24px 60px rgba(0,0,0,.32);
+  max-height: 74vh; overflow-y: auto; padding: 32px 32px 28px;
+  display: none;
+}
+.faq-open .faq-backdrop, .faq-open .faq-panel { display: block; }
+
+/* ---- responsive ---- */
+@media (max-width: 900px) {
+  .beyond-report-grid { grid-template-columns: 1fr 1fr !important; }
+  header nav { display: none !important; }
+  #top > div { grid-template-columns: 1fr !important; padding-top: 56px !important; padding-bottom: 56px !important; }
+  #problem > div:first-child { grid-template-columns: 1fr !important; gap: 32px !important; }
+  #problem > div:first-child > div:first-child { position: static !important; }
+  #method > div > div:first-child { grid-template-columns: 1fr !important; }
+  #method .flow-illustration { position: static !important; }
+  #method > div > div:nth-of-type(2) { grid-template-columns: 1fr !important; }
+  #flags > div { grid-template-columns: 1fr !important; }
+  #implementation > div > div:first-child { grid-template-columns: 1fr !important; gap: 28px !important; }
+  #implementation > div > div:nth-of-type(2) { grid-template-columns: 1fr 1fr !important; }
+  #who > div > div:nth-of-type(2) { grid-template-columns: 1fr 1fr !important; }
+  footer > div:first-child { grid-template-columns: 1fr !important; gap: 28px !important; }
+
+  /* collapse the sticky FAQ bar into a small corner FAB so it stops
+     permanently covering a line of page content at every scroll position */
+  .faq-launcher { justify-content: flex-start !important; }
+  .faq-bar {
+    margin: 0 16px 16px;
+    border-radius: 50% !important;
+    width: 52px;
+    height: 52px;
+    padding: 0 !important;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,.35);
+  }
+  .faq-bar-label { display: none; }
+  .faq-bar-icon { font-size: 19px !important; }
+  .faq-panel { bottom: 78px !important; }
+}
+@media (max-width: 560px) {
+  .beyond-report-grid { grid-template-columns: 1fr !important; }
+  #implementation > div > div:nth-of-type(2) { grid-template-columns: 1fr !important; }
+  #who > div > div:nth-of-type(2) { grid-template-columns: 1fr !important; }
+  section, header > div { padding-left: 20px !important; padding-right: 20px !important; }
+}
+
+/* ---- print (sample report page) ---- */
+@media print {
+  .faq-bar, .no-print { display: none !important; }
+}
