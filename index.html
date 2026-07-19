@@ -6,6 +6,7 @@
 <title>ALNA — מחברים את המידע. מלווים את השינוי.</title>
 <meta name="description" content="ALNA היא פלטפורמת אבחון ותמיכה בקבלת החלטות עבור ארגוני טיפול, שיקום ורווחה. אנחנו מחברים בין נתונים, תהליכים, הקשר ארגוני והידע של אנשי המקצוע כדי לזהות צווארי בקבוק, להבין את המנגנונים שמאחוריהם ולהפוך תובנות לפעולה.">
 <link rel="canonical" href="https://alnasystems.com/">
+<meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="he_IL">
 <meta property="og:site_name" content="ALNA">
@@ -22,7 +23,106 @@
 <link rel="icon" href="/assets/img/favicon-32.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="assets/fonts/heebo-hebrew-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/heebo-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://alnasystems.com/#organization",
+      "name": "ALNA",
+      "url": "https://alnasystems.com/",
+      "logo": "https://alnasystems.com/assets/img/alna-wordmark.png",
+      "description": "ALNA היא פלטפורמת אבחון ותמיכה בקבלת החלטות עבור ארגוני טיפול, שיקום ורווחה.",
+      "email": "alna.insights@gmail.com",
+      "telephone": "+972-54-520-6037",
+      "areaServed": "IL",
+      "knowsLanguage": "he"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://alnasystems.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "האם ALNA היא מערכת AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "לא. ALNA היא בראש ובראשונה מתודולוגיית אבחון ופלטפורמה תומכת החלטה. במידת הצורך ניתן לשלב כלי AI ואוטומציות כחלק מההטמעה, אך הם אינם נקודת המוצא. המטרה היא להבין את הארגון ולקבל החלטות טובות יותר."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "יש לנו כבר הרבה נתונים. מה הערך של ALNA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ברוב הארגונים הנתונים כבר קיימים. הערך של ALNA אינו באיסוף מידע נוסף, אלא בחיבור בין הנתונים, התהליך הארגוני והידע של אנשי המקצוע, כדי להבין מה באמת משפיע על התוצאות."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "האם צריך לעבור למערכת חדשה?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "לא. בשלב האבחון אנחנו עובדים עם המידע שכבר קיים בארגון. במידת הצורך ניתן בהמשך לחבר מקורות מידע שונים או להוסיף פתרונות משלימים, אבל אין צורך להחליף את מערכות העבודה הקיימות."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "מה מקבלים בסוף התהליך?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "דוח אבחון ארגוני הכולל תמונה מערכתית של הארגון, חוזקות, צווארי בקבוק, מנגנונים מערכתיים, סדרי עדיפויות ותוכנית פעולה ראשונית. אם תרצו, נוכל להמשיך גם לשלב הליווי וההטמעה."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "האם אתם גם מלווים את היישום?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "כן. האבחון הוא הבסיס, לא הסוף. ההטמעה יכולה להיות טכנולוגית (כלים, אוטומציות, מערכות תומכות החלטה) אך באותה מידה גם אנושית: שינוי תהליך, חלוקת אחריות מחדש, הכשרת צוותים או התאמת דרך העבודה. הבידול של ALNA הוא בכך שהיישום נבחר לפי מה שיוצר שינוי אמיתי בארגון, לא לפי פתרון טכנולוגי מוגדר מראש."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "כמה עולה תהליך עם ALNA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "העלות נקבעת לפי היקף הארגון, התהליך שנבחר לבדיקה, מספר בעלי התפקידים ומקורות המידע שנכללים באבחון. לאחר שיחת היכרות נגדיר יחד את היקף העבודה ותקבלו הצעת מחיר מסודרת מראש. האבחון מתומחר כפרויקט מוגדר. לאחר הצגת הממצאים נבנית תוכנית פעולה, ובהתאם לה נקבע היקף הליווי ביישום. אפשר להתחיל בתהליך ממוקד ולהרחיב אותו רק כאשר יש לכך צורך וערך לארגון."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "איך נשמרת אבטחת המידע?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ALNA מתמקדת באבחון תהליכים ארגוניים. בפיילוט אין צורך במידע מזהה על מטופלים, ואנחנו עובדים רק עם המידע הנדרש לצורך האבחון ובהתאם לנהלי הארגון."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "כמה זמן נמשך תהליך האבחון?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "משך התהליך משתנה בהתאם לגודל הארגון ולמורכבותו, אך בדרך כלל כולל פגישת מיפוי, שאלונים, ראיונות ממוקדים, ניתוח הנתונים הקיימים ופגישת הצגת הממצאים."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "במה ALNA שונה מייעוץ ארגוני?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ALNA מתחילה באבחון שיטתי של התהליך הארגוני. היא מחברת בין נתונים, תהליכים והידע של אנשי המקצוע כדי להבין מהם המנגנונים המשפיעים על התוצאות. לאחר מכן, ובהתאם לצורך, ניתן גם ללוות את יישום השינויים. כלומר, האבחון הוא הבסיס לכל החלטה, לא שלב שמדלגים עליו."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
