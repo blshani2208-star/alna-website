@@ -784,6 +784,7 @@
         <span style="display:flex;gap:16px">
           <a class="footer-link" href="privacy-policy.html">מדיניות פרטיות</a>
           <a class="footer-link" href="accessibility.html">הצהרת נגישות</a>
+          <a class="footer-link" href="#" id="cookie-prefs-link">העדפות עוגיות</a>
         </span>
       </div>
     </div>
@@ -871,6 +872,18 @@
 
 </div>
 
+<!-- ============ COOKIE CONSENT ============ -->
+<div id="cookie-consent-banner" role="region" aria-label="הודעת עוגיות" style="display:none;position:fixed;bottom:0;right:0;left:0;z-index:90;background:#0F1D2E;color:#F5F1EA;padding:18px 24px;box-shadow:0 -10px 30px rgba(0,0,0,.25);flex-direction:column;gap:14px;align-items:center;text-align:center">
+  <div style="max-width:760px;font-size:14.5px;line-height:1.6;color:#dfe4e9">
+    האתר משתמש בעוגיות אנליטיות כדי להבין כיצד משתמשים באתר ולשפר אותו. ניתן לאשר או לדחות את השימוש בהן. פרטים נוספים ב<a href="privacy-policy.html" style="color:#D4A017;text-decoration:underline">מדיניות הפרטיות</a>.
+  </div>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+    <button id="cookie-accept" type="button" style="background:#D4A017;color:#0F1D2E;font-weight:700;font-size:14.5px;padding:10px 26px;border-radius:7px;border:none;cursor:pointer">מאשר/ת</button>
+    <button id="cookie-decline" type="button" style="background:transparent;color:#F5F1EA;font-weight:600;font-size:14.5px;padding:10px 26px;border-radius:7px;border:1px solid rgba(245,241,234,.35);cursor:pointer">דוחה</button>
+  </div>
+</div>
+
+<script src="js/consent.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
