@@ -28,8 +28,7 @@
 <link rel="preload" href="assets/fonts/heebo-hebrew-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/heebo-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/styles.css">
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -125,6 +124,14 @@
         },
         {
           "@type": "Question",
+          "name": "מה קורה אחרי האבחון?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "אחרי האבחון בוחרים יחד נקודה אחת או שתיים שכדאי לשנות. בהתאם לצורך, ALNA והליווי האנושי מסייעים להפוך את ההמלצה לשינוי שאפשר ליישם. לאחר מכן חוזרים לבדוק מה באמת יושם, מה השתנה ומה אפשר ללמוד להמשך. כיום המעקב נעשה באמצעות שאלוני המשך ותהליך בדיקה מובנה. בהמשך, המטרה היא לחבר יותר מהמעקב גם לנתונים שכבר קיימים במערכות הארגון."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "כמה עולה תהליך עם ALNA?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -182,8 +189,7 @@
       ]
     }
   ]
-}
-</script>
+}</script>
 </head>
 <body>
 <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
@@ -443,6 +449,29 @@
     </div>
   </section>
 
+  <!-- ============ DIAGNOSIS IS THE START, NOT THE PRODUCT ============ -->
+  <section style="background:#F5F1EA">
+    <div style="max-width:760px;margin:0 auto;padding:90px 36px;text-align:center">
+      <h2 style="font-size:clamp(28px,3.2vw,38px);font-weight:800;line-height:1.24;letter-spacing:-.015em;margin-bottom:24px">האבחון הוא רק ההתחלה</h2>
+      <p style="font-size:17.5px;line-height:1.7;color:#48535f;margin-bottom:16px">אחרי שמבינים מה קורה ומה עשוי לעמוד מאחורי הפערים, בוחרים מה נכון לשנות.</p>
+      <p style="font-size:17.5px;line-height:1.7;color:#48535f;margin-bottom:40px">ALNA ממשיכה עם הארגון גם אחרי האבחון, כדי לעזור להפוך את הממצאים לשינוי שאפשר ליישם, ואז לבדוק מה באמת השתנה ומה אפשר ללמוד להמשך.</p>
+
+      <div style="display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:32px" aria-hidden="true">
+        <span style="font-size:14px;font-weight:700;color:#0F1D2E;background:#fff;border:1px solid #e5ded0;border-radius:20px;padding:9px 18px">אבחון</span>
+        <span style="color:#c8bfa8;font-size:15px">←</span>
+        <span style="font-size:14px;font-weight:700;color:#0F1D2E;background:#fff;border:1px solid #e5ded0;border-radius:20px;padding:9px 18px">בחירת שינוי</span>
+        <span style="color:#c8bfa8;font-size:15px">←</span>
+        <span style="font-size:14px;font-weight:700;color:#0F1D2E;background:#fff;border:1px solid #e5ded0;border-radius:20px;padding:9px 18px">יישום</span>
+        <span style="color:#c8bfa8;font-size:15px">←</span>
+        <span style="font-size:14px;font-weight:700;color:#0F1D2E;background:#fff;border:1px solid #e5ded0;border-radius:20px;padding:9px 18px">בדיקה</span>
+        <span style="color:#c8bfa8;font-size:15px">←</span>
+        <span style="font-size:14px;font-weight:700;color:#0F1D2E;background:#D4A017;border-radius:20px;padding:9px 18px">למידה</span>
+      </div>
+
+      <p style="font-size:clamp(19px,2vw,22px);font-weight:600;line-height:1.5;letter-spacing:-.01em;color:#0F1D2E">המטרה היא לא להשאיר את הארגון עם דוח והמלצות, אלא ללוות את הדרך מהבנה לשינוי וללמידה.</p>
+    </div>
+  </section>
+
   <!-- ============ THE DIAGNOSTIC REPORT ============ -->
   <section id="flags" style="background:#1F364F;color:#F5F1EA;position:relative;overflow:hidden">
     <svg viewBox="0 0 1440 400" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;opacity:.45" aria-hidden="true">
@@ -687,6 +716,7 @@
           <h3 style="font-size:16.5px;font-weight:700;line-height:1.4;margin:0">לא עוד מערכת שמוסיפה עבודה</h3>
         </div>
       </div>
+      <p style="text-align:center;font-size:17px;line-height:1.7;color:#48535f;max-width:640px;margin:36px auto 0">ALNA לא מסתיימת בדוח אבחון. לאורך זמן נשמרת התמונה של מה נבדק, מה שונה ומה הארגון למד.</p>
     </div>
   </section>
 
@@ -868,6 +898,13 @@
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <p class="faq-answer">כן. האבחון הוא הבסיס, לא הסוף. ההטמעה יכולה להיות טכנולוגית (כלים, אוטומציות, מערכות תומכות החלטה) אך באותה מידה גם אנושית: שינוי תהליך, חלוקת אחריות מחדש, הכשרת צוותים או התאמת דרך העבודה. הבידול של ALNA הוא בכך שהיישום נבחר לפי מה שיוצר שינוי אמיתי בארגון, לא לפי פתרון טכנולוגי מוגדר מראש.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span class="faq-question-text">מה קורה אחרי האבחון?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <p class="faq-answer">אחרי האבחון בוחרים יחד נקודה אחת או שתיים שכדאי לשנות. בהתאם לצורך, ALNA והליווי האנושי מסייעים להפוך את ההמלצה לשינוי שאפשר ליישם. לאחר מכן חוזרים לבדוק מה באמת יושם, מה השתנה ומה אפשר ללמוד להמשך. כיום המעקב נעשה באמצעות שאלוני המשך ותהליך בדיקה מובנה. בהמשך, המטרה היא לחבר יותר מהמעקב גם לנתונים שכבר קיימים במערכות הארגון.</p>
       </div>
       <div class="faq-item">
         <button class="faq-question" type="button" aria-expanded="false">
