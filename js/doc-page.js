@@ -74,6 +74,7 @@
     }
     .sheet {
       width: var(--doc-page-w);
+      max-width: 100%;
       margin: 0 auto;
       background: #fff;
       box-shadow: 0 2px 14px rgba(20, 20, 19, 0.12);
@@ -87,6 +88,9 @@
     .ftr-space { height: var(--doc-ftr-h); }
     ::slotted([slot="header"]),
     ::slotted([slot="footer"]) { display: block; box-sizing: border-box; }
+    @media screen and (max-width: 900px) {
+      :host { padding: 20px 12px; --doc-page-margin: 20px; }
+    }
     @media print {
       :host { background: none; padding: 0; min-height: 0; }
       .sheet {
