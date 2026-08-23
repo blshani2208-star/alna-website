@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>דוח אבחון ארגוני — דוגמה | ALNA</title>
-<meta name="description" content="דוגמה לדוח אבחון ארגוני של ALNA: התמונה המערכתית, מסע המשתתף, הראיות וההשערות שמסבירות כל דגל, ותוכנית פעולה ל-90 הימים הקרובים. כל הנתונים לדוגמה בלבד.">
+<title>דוח אבחון והטמעה ארגונית — דוגמה | ALNA</title>
+<meta name="description" content="דוגמה לדוח אבחון והטמעה ארגונית של ALNA: מיפוי מסע השירות, ממצאים, מנגנון אפשרי, המלצה להתערבות ומדדי הצלחה. כל הנתונים בדוח לדוגמה בלבד.">
 <link rel="canonical" href="https://alnasystems.com/sample-report.html">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="he_IL">
-<meta property="og:site_name" content="ALNA">
-<meta property="og:title" content="דוח אבחון ארגוני — דוגמה | ALNA">
-<meta property="og:description" content="דוגמה לדוח אבחון ארגוני של ALNA: התמונה המערכתית, מסע המשתתף, הראיות, ותוכנית פעולה ל-90 הימים הקרובים.">
+<meta property="og:site_name" content="ALNA Systems">
+<meta property="og:title" content="דוח אבחון והטמעה ארגונית — דוגמה | ALNA">
+<meta property="og:description" content="דוגמה לדוח אבחון והטמעה ארגונית של ALNA: מיפוי מסע השירות, ממצאים, מנגנון אפשרי, המלצה להתערבות ומדדי הצלחה.">
 <meta property="og:url" content="https://alnasystems.com/sample-report.html">
 <meta name="theme-color" content="#0F1D2E">
 <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
@@ -23,12 +23,20 @@
   doc-page h2 { text-align: center; }
   doc-page p, doc-page li { color: #3a4450; }
   doc-page table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  @media screen and (max-width: 640px) {
+    doc-page table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  }
   doc-page th { background: #0F1D2E; color: #F5F1EA; text-align: right; padding: 9px 11px; font-size: 12.5px; font-weight: 600; }
   doc-page td { padding: 9px 11px; border-bottom: 1px solid #e7e2d8; font-size: 13.5px; vertical-align: top; }
   doc-page tr:last-child td { border-bottom: none; }
   .conf-bar { height: 6px; border-radius: 3px; background: #e7e2d8; overflow: hidden; flex: 1; }
   .conf-fill { height: 100%; background: #D4A017; border-radius: 3px; }
   .sec-head { font-size: 12px; font-weight: 700; letter-spacing: .1em; color: #7f600d; margin-bottom: 6px; }
+  .demo-tag { font-size: 10.5px; font-weight: 700; color: #7f600d; background: rgba(212,160,23,.16); padding: 2px 8px; border-radius: 10px; white-space: nowrap; display: inline-block; }
+  .chain-chip { font-size: 12.5px; font-weight: 600; background: rgba(245,241,234,.08); color: #F5F1EA; padding: 6px 12px; border-radius: 20px; white-space: nowrap; }
+  .chain-chip-light { font-size: 13px; font-weight: 600; background: #fff; border: 1px solid #e7e2d8; border-radius: 8px; padding: 9px 14px; white-space: nowrap; }
+  .chain-arrow { color: #7f600d; font-size: 16px; padding: 0 8px; }
+  .friction-row td { background: #FBF3E1; }
   .back-bar {
     position: sticky; top: 0; z-index: 20; background: rgba(242,237,228,.92);
     backdrop-filter: blur(12px); border-bottom: 1px solid rgba(15,29,46,.07);
@@ -50,7 +58,7 @@
     </picture>
     <span aria-hidden="true">→</span> חזרה לאתר
   </a>
-  <a class="cta" href="https://calendly.com/alna-insights" target="_blank" rel="noopener">קביעת שיחת היכרות</a>
+  <a class="cta" href="https://calendly.com/alna-insights" target="_blank" rel="noopener">קביעת שיחת אבחון</a>
 </header>
 
 <main dir="rtl" id="report">
@@ -62,7 +70,7 @@
       <source srcset="assets/img/alna-wordmark.webp" type="image/webp">
       <img src="assets/img/alna-wordmark.png" alt="ALNA" style="height:22px;width:auto">
     </picture>
-    <span style="font-size:11px;color:#646970;font-weight:600;letter-spacing:.04em">דוח אבחון ארגוני · דוגמה</span>
+    <span style="font-size:11px;color:#646970;font-weight:600;letter-spacing:.04em">דוח אבחון והטמעה ארגונית · דוגמה</span>
   </div>
   <div slot="footer" style="display:flex;align-items:center;justify-content:space-between;padding-top:8px;border-top:1px solid #e7e2d8;font-size:11px;color:#646970">
     <span>© ALNA · מסמך להמחשה בלבד</span>
@@ -70,398 +78,528 @@
   </div>
 
   <!-- ===== cover ===== -->
-  <div style="text-align:center;padding:22px 0 34px">
+  <div style="text-align:center;padding:22px 0 30px">
     <picture>
       <source srcset="assets/img/alna-wordmark.webp" type="image/webp">
-      <img src="assets/img/alna-wordmark.png" alt="ALNA" style="height:32px;width:auto;margin-bottom:40px">
+      <img src="assets/img/alna-wordmark.png" alt="ALNA" style="height:32px;width:auto;margin-bottom:32px">
     </picture>
-    <div style="font-size:12.5px;font-weight:700;letter-spacing:.14em;color:#7f600d;margin-bottom:16px">דוח אבחון ארגוני · מסמך לדוגמה</div>
-    <h1 style="font-size:33px;font-weight:800;line-height:1.25;letter-spacing:-.01em;margin:0 0 14px">כך ALNA מבינה את הארגון: לא רק מה קורה, אלא למה</h1>
-    <p style="font-size:15.5px;color:#5a6470;max-width:460px;margin:0 auto 26px">מסע המשתתף, הראיות שנאספו, המנגנונים שמסבירים את הממצאים, ורמת הביטחון מאחורי כל מסקנה</p>
-    <div style="display:inline-flex;gap:26px;font-size:13px;color:#606770;border-top:1px solid #e7e2d8;padding-top:16px">
-      <span>ארגון: <strong style="color:#0F1D2E">מרכז שיקום, לדוגמה</strong></span>
-      <span>תקופה: <strong style="color:#0F1D2E">רבעון לדוגמה</strong></span>
+    <div style="font-size:12.5px;font-weight:700;letter-spacing:.14em;color:#7f600d;margin-bottom:16px">דוח פלט ארגוני</div>
+    <h1 style="font-size:32px;font-weight:800;line-height:1.25;letter-spacing:-.01em;margin:0 0 14px">דוח אבחון והטמעה ארגונית</h1>
+    <p style="font-size:15.5px;color:#5a6470;max-width:480px;margin:0 auto 10px">מה קורה בתהליך השירות בין הקליטה לשלב הבא, מה עשוי להסביר את התקיעות, ומה נכון לעשות עכשיו.</p>
+    <p style="font-size:13.5px;color:#5a6470;max-width:440px;margin:0 auto 26px">הדוח מראה כיצד עוברים מזיהוי תקיעות להחלטה מעשית שניתן להטמיע ולבדוק.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:560px;margin:0 auto;text-align:right;border-top:1px solid #e7e2d8;padding-top:20px">
+      <div>
+        <div class="sec-head">הארגון</div>
+        <div style="font-size:14.5px;font-weight:700;color:#0F1D2E">מרכז אופק לשיקום תעסוקתי</div>
+        <div style="font-size:12px;color:#606770;margin-top:2px">שם הארגון בדוח הוא מדומה</div>
+      </div>
+      <div>
+        <div class="sec-head">תקופת האבחון</div>
+        <div style="font-size:14.5px;font-weight:700;color:#0F1D2E">12.5.2026 עד 18.6.2026</div>
+        <div style="font-size:12px;color:#606770;margin-top:2px">מחזור אבחון ראשון</div>
+      </div>
+      <div>
+        <div class="sec-head">שלב המסע שנבדק</div>
+        <div style="font-size:14.5px;font-weight:700;color:#0F1D2E">קליטה, הערכה ראשונית, שיבוץ</div>
+        <div style="font-size:12px;color:#606770;margin-top:2px">שלושה שלבים רצופים</div>
+      </div>
+      <div>
+        <div class="sec-head">מצב ההמלצה</div>
+        <div style="font-size:14.5px;font-weight:700;color:#0F1D2E">מומלץ להתחיל בהתערבות ראשונית ומוגבלת</div>
+        <div style="font-size:12px;color:#606770;margin-top:2px">קוד מצב במערכת: recommended</div>
+      </div>
     </div>
   </div>
 
-  <!-- ===== the systemic picture (one page summary) ===== -->
-  <div style="border:2px solid #0F1D2E;border-radius:14px;padding:30px 32px;margin-bottom:30px;break-inside:avoid">
-    <div style="text-align:center;margin-bottom:22px">
-      <div style="font-size:12px;font-weight:700;letter-spacing:.14em;color:#7f600d;margin-bottom:8px">עמוד מסכם</div>
-      <h2 style="font-size:26px;font-weight:800;margin:0">התמונה המערכתית</h2>
-      <p style="font-size:13.5px;color:#5a646e;margin-top:8px">מי שקורא רק את העמוד הזה, מבין את כל הסיפור</p>
+  <div style="background:#F7F3EC;border-radius:12px;padding:16px 22px;margin-bottom:8px;break-inside:avoid">
+    <div style="font-size:13px;font-weight:700;color:#0F1D2E;margin-bottom:5px">דוח דמה. כל הנתונים מדומים.</div>
+    <p style="font-size:12.5px;line-height:1.6;color:#5a6470;margin:0">הדוח נכתב להדגמת אופן העבודה של ALNA. הארגון, השמות, המספרים והציטוטים אינם אמיתיים ואינם מבוססים על מידע אישי או רפואי כלשהו. כל נתון מדומה מסומן בגוף הדוח.</p>
+  </div>
+
+  <!-- ===== chapter 01: executive summary ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:34px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">תמצית מנהלים</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 01</div>
+
+  <div style="background:#F7F3EC;border-radius:10px;padding:18px 20px;margin-bottom:16px;break-inside:avoid">
+    <p style="font-size:13.5px;line-height:1.65;margin:0">האתגר המרכזי שנמצא הוא עיכוב במעבר משלב הקליטה לשלב הבא: רק 41 מתוך 68 פניות עברו לשלב הבא בתוך 14 ימי עבודה. הנתונים מצביעים על כך שהקושי אינו נובע בהכרח מעומס בלבד, אלא גם מחוסר בהירות בנוגע לבעלות על ההעברה, מי אמור לאשר אותה ומתי היא נחשבת שהושלמה. ההמלצה הראשונית היא להתחיל בשיפור בהירות ההעברה בצוות אחד ומוגבל, לפני שקילה של כל שינוי מערכתי או ארגוני נרחב יותר. הצלחת ההתערבות תיבחן קודם לפי ביצוע בפועל של אישור הקבלה, ורק לאחר מכן לפי זמן המעבר ושיעור ההמשך לשלב הבא.</p>
+  </div>
+
+  <table style="margin-bottom:10px">
+    <tbody>
+      <tr><td style="width:150px;font-weight:700;color:#7f600d;font-size:13px">מה קורה?</td><td>מתוך 68 פניות שנקלטו בתקופת האבחון, 41 עברו לשלב הבא בתוך 14 ימי עבודה. הזמן הממוצע מקליטה לשיבוץ עמד על 19.4 ימי עבודה <span class="demo-tag">נתון מדומה</span></td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:13px">למה זה עשוי לקרות?</td><td>ייתכן שהמנגנון המרכזי הוא חוסר בהירות בבעלות ובהעברת האחריות בנקודת המעבר. לא מוגדר די הצורך מי סוגר את ההעברה, מה חייב לעבור ומתי המעבר נחשב שהושלם. בפועל אין רגע אחד שבו מישהו מאשר קבלה.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:13px">על מי זה משפיע?</td><td>על המוטבים, שממתינים זמן ארוך יותר וללא ודאות לגבי הצעד הבא. על רכזות הקליטה, שנושאות מעקב ידני שאינו מתועד. על ההנהלה, שמקבלת תמונת מצב מאוחרת מדי.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:13px">מה כדאי לעשות קודם?</td><td>להפעיל ארבעה שבועות של תהליך handoff אחיד בצוות אחד: owner מוגדר לכל מעבר, checklist קצר, אישור קבלה מצד הגורם הבא, וזמן יעד ברור. ללא רכש, ללא מערכת חדשה, ללא שינוי מבני.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:13px">איך נדע אם חל שינוי?</td><td>קודם נבדוק אם ההתנהגות בוצעה: כמה מההעברות קיבלו אישור קבלה בתוך יום עבודה אחד. רק אחר כך נבדוק תוצאה: זמן המעבר, מספר המקרים התקועים ושיעור ההמשך לשלב הבא.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ===== how the report moves ===== -->
+  <div style="background:#0F1D2E;border-radius:12px;padding:20px 24px;margin-top:14px;break-inside:avoid">
+    <div style="text-align:center;font-size:12px;font-weight:700;letter-spacing:.1em;color:#D4A017;margin-bottom:14px">הדרך שהדוח עובר</div>
+    <div style="display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center">
+      <span class="chain-chip">תוצאה · מה השתנה</span>
+      <span class="chain-arrow" aria-hidden="true">←</span>
+      <span class="chain-chip">התנהגות · מה בוצע בפועל</span>
+      <span class="chain-arrow" aria-hidden="true">←</span>
+      <span class="chain-chip">פעולה · מה הוחלט</span>
+      <span class="chain-arrow" aria-hidden="true">←</span>
+      <span class="chain-chip">מנגנון · מה עשוי להסביר</span>
+      <span class="chain-arrow" aria-hidden="true">←</span>
+      <span class="chain-chip">ממצא · מה נצפה</span>
     </div>
+    <p style="font-size:12.5px;line-height:1.6;color:#b8c0c9;margin:14px 0 0;text-align:center">חמשת השלבים נשמרים נפרדים לאורך כל הדוח, יחד עם החלטת הארגון שביניהם. רק ההפרדה הזו מאפשרת לדעת במחזור הבא אם השינוי לא עבד, או פשוט לא בוצע.</p>
+  </div>
 
-    <div class="sec-head" style="text-align:center">מה עובד טוב</div>
-    <p style="font-size:14px;line-height:1.6;text-align:center;margin-bottom:20px">רציפות טיפולית גבוהה לאחר האינטייק, שיתוף פעולה טוב בין מקצועות, ושביעות רצון גבוהה בקרב מטופלים.</p>
+  <!-- ===== chapter 02: scope ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">מטרת האבחון והיקף הבדיקה</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 02</div>
 
-    <div class="sec-head" style="text-align:center">שלושת המנגנונים המרכזיים</div>
-    <div style="display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;margin-bottom:20px">
-      <span style="font-size:13px;font-weight:600;background:#F7F3EC;border-radius:8px;padding:9px 14px;white-space:nowrap">עומס באינטייק</span>
-      <span style="color:#7f600d;font-size:16px;padding:0 8px" aria-hidden="true">←</span>
-      <span style="font-size:13px;font-weight:600;background:#F7F3EC;border-radius:8px;padding:9px 14px;white-space:nowrap">זמן המתנה ממושך</span>
-      <span style="color:#7f600d;font-size:16px;padding:0 8px" aria-hidden="true">←</span>
-      <span style="font-size:13px;font-weight:700;background:#0F1D2E;color:#F5F1EA;border-radius:8px;padding:9px 14px;white-space:nowrap">No-show ונשירה</span>
+  <p style="font-size:14px;line-height:1.7;margin-bottom:14px">הארגון ביקש להבין מדוע חלק מהמטופלים אינם עוברים באופן רציף משלב הקליטה לשלב הראשון של התהליך השיקומי. כך תיאר זאת הארגון בפתח האבחון: ״אנחנו מרגישים שיש עיכובים אחרי הקליטה. הצוות עמוס, לא תמיד ברור מי אחראי על המעבר לשלב הבא, וחלק מהמטופלים אינם ממשיכים בזמן.״ היעד שהוגדר יחד: לקצר את הזמן עד המעבר לשלב הבא, לשפר את בהירות האחריות ולצמצם נשירה או תקיעות.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+    <div style="background:#F7F3EC;border-radius:8px;padding:15px 17px">
+      <div class="sec-head">מי השתתף <span class="demo-tag">נתון מדומה</span></div>
+      <p style="font-size:13px;line-height:1.6;margin:6px 0 0">14 אנשי צוות משלוש שכבות: שדה (רכזות קליטה, מדריכים תעסוקתיים), ניהול ביניים (רכזת תחום, אחראית שיבוץ), הנהלה (מנהלת המרכז).</p>
     </div>
-
-    <div class="sec-head" style="text-align:center">נקודת ההתערבות הראשונה</div>
-    <p style="font-size:15px;font-weight:700;text-align:center;color:#0F1D2E;margin-bottom:6px">מסלול קליטה מזורז לפניות דחופות</p>
-    <p style="font-size:13.5px;line-height:1.6;text-align:center;color:#5a6470;margin-bottom:20px">נבחרה ראשונה כי היא מסבירה את מרבית הדגלים שזוהו (ביטחון 82%), וההשפעה הצפויה שלה על השרשרת כולה גבוהה ביחס למאמץ הנדרש.</p>
-
-    <div class="sec-head" style="text-align:center">מה צפוי להשתנות</div>
-    <div style="display:flex;justify-content:center;gap:26px;flex-wrap:wrap">
-      <div style="text-align:center"><div style="font-size:13px;color:#5a646e">זמן המתנה למקרים דחופים</div><div style="font-size:14px;font-weight:700;color:#1a754d">↓ 30%</div></div>
-      <div style="text-align:center"><div style="font-size:13px;color:#5a646e">אינטייק תוך 7 ימים</div><div style="font-size:14px;font-weight:700;color:#1a754d">90% מהפניות</div></div>
-      <div style="text-align:center"><div style="font-size:13px;color:#5a646e">שיעור No-show</div><div style="font-size:14px;font-weight:700;color:#1a754d">במגמת ירידה</div></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:15px 17px">
+      <div class="sec-head">אילו מקורות נבדקו</div>
+      <p style="font-size:13px;line-height:1.6;margin:6px 0 0">שלושת שאלוני ALNA (שדה, ניהול ביניים, הנהלה), מסמכי הארגון ונהלי הקליטה, מפת התהליך כפי ששורטטה עם הצוות, ארבע שיחות עומק, נתונים תפעוליים על 68 פניות <span class="demo-tag">נתון מדומה</span></p>
     </div>
   </div>
 
-  <!-- ===== how ALNA thinks ===== -->
-  <div style="background:#0F1D2E;border-radius:12px;padding:22px 26px;margin-bottom:8px;break-inside:avoid">
-    <div style="font-size:13px;font-weight:700;letter-spacing:.06em;color:#D4A017;margin-bottom:14px">איך הגענו למסקנות</div>
-    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
-      <span style="font-size:12.5px;color:#F5F1EA;font-weight:600;background:rgba(245,241,234,.08);padding:6px 12px;border-radius:20px">1. מיפוי מסע המשתתף</span>
-      <span style="color:#7f600d" aria-hidden="true">←</span>
-      <span style="font-size:12.5px;color:#F5F1EA;font-weight:600;background:rgba(245,241,234,.08);padding:6px 12px;border-radius:20px">2. איסוף ראיות</span>
-      <span style="color:#7f600d" aria-hidden="true">←</span>
-      <span style="font-size:12.5px;color:#F5F1EA;font-weight:600;background:rgba(245,241,234,.08);padding:6px 12px;border-radius:20px">3. זיהוי דגלים</span>
-      <span style="color:#7f600d" aria-hidden="true">←</span>
-      <span style="font-size:12.5px;color:#F5F1EA;font-weight:600;background:rgba(245,241,234,.08);padding:6px 12px;border-radius:20px">4. בניית השערות</span>
-      <span style="color:#7f600d" aria-hidden="true">←</span>
-      <span style="font-size:12.5px;color:#F5F1EA;font-weight:600;background:rgba(245,241,234,.08);padding:6px 12px;border-radius:20px">5. דירוג ביטחון</span>
-      <span style="color:#7f600d" aria-hidden="true">←</span>
-      <span style="font-size:12.5px;color:#F5F1EA;font-weight:600;background:rgba(245,241,234,.08);padding:6px 12px;border-radius:20px">6. עדיפות להתערבות</span>
+  <p style="font-size:13.5px;line-height:1.65;margin-bottom:10px"><strong style="color:#0F1D2E">מה לא נבדק.</strong> איכות ההתערבות הטיפולית עצמה. תוצאות שיקומיות ארוכות טווח. עומסים בשלבים מאוחרים של התהליך. תפקוד פרטני של עובדים. זמני התגובה של גורמי ההפניה החיצוניים נבדקו חלקית בלבד, והם נותרו הסבר חלופי פתוח.</p>
+  <p style="font-size:13.5px;line-height:1.65"><strong style="color:#0F1D2E">גבול מקצועי.</strong> האבחון עוסק בתהליך הארגוני ובהשפעתו על מסע המוטב. הוא אינו הערכת עובדים ואינו כלי משוב אישי. ALNA אינה מחליפה שיקול דעת מקצועי, ניהולי או קליני. תפקידה לארגן ראיות, להעלות השערות ולסייע בקבלת החלטה מקצועית.</p>
+
+  <!-- ===== chapter 03: service journey map ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">מפת מסע השירות</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 03</div>
+  <p style="font-size:14px;line-height:1.7;margin-bottom:12px">התהליך כפי שתואר על ידי הצוות. נקודת החיכוך המרכזית מסומנת בצבע.</p>
+
+  <table style="margin-bottom:10px">
+    <thead><tr><th>שלב</th><th>מה קורה היום</th><th>מי מעורב</th><th>נקודת חיכוך</th><th>מה נדרש לשלב הבא</th></tr></thead>
+    <tbody>
+      <tr><td>1. פנייה או הפניה</td><td>פנייה מגיעה בטלפון, בדוא״ל או דרך גורם מפנה, ונרשמת ביומן הקליטה.</td><td>מזכירות, רכזת קליטה</td><td>פרטים חסרים בפניות מגורם מפנה</td><td>פרטי קשר וסיבת הפנייה</td></tr>
+      <tr><td>2. קליטה</td><td>שיחת קליטה, מילוי טופס ופתיחת תיק.</td><td>רכזת קליטה</td><td>תיעוד חלקי של הצרכים</td><td>תיק פתוח וסיכום שיחה</td></tr>
+      <tr class="friction-row"><td>3. הערכה ראשונית</td><td>ההערכה נקבעת מול איש מקצוע פנוי, ולעיתים נדחית וחוזרת ליומן.</td><td>רכזת קליטה, מעריך מקצועי</td><td><strong style="color:#7f600d">נקודת חיכוך מרכזית</strong> · לא ברור מי מוודא שההערכה אכן התקיימה</td><td>מסמך הערכה והמלצה להמשך</td></tr>
+      <tr class="friction-row"><td>4. החלטה על המשך</td><td>ההחלטה מתקבלת בישיבת צוות שבועית או בשיחה שאינה מתועדת.</td><td>רכזת תחום, מעריך</td><td><strong style="color:#7f600d">נקודת חיכוך מרכזית</strong> · אין רגע מוגדר שבו האחריות עוברת</td><td>החלטה מתועדת ובעל תפקיד שמקבל אותה</td></tr>
+      <tr><td>5. שיבוץ</td><td>שיבוץ לאיש מקצוע או לתכנית, לפי זמינות.</td><td>אחראית שיבוץ</td><td>המתנה לקיבולת בתכניות מסוימות</td><td>מועד ראשון שנקבע</td></tr>
+      <tr><td>6. תחילת השתתפות</td><td>המוטב מגיע למפגש הראשון.</td><td>מדריך תעסוקתי</td><td>נשירה בין השיבוץ למפגש הראשון</td><td>השתתפות בפועל</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:12.5px;color:#606770">המפה משקפת את התהליך כפי שתואר בשיחות ובמסמכים. ייתכנו הבדלים בין צוותים שלא נבדקו במחזור זה.</p>
+
+  <!-- ===== chapter 04: findings ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">מה ראינו, ממצאים</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 04</div>
+
+  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:18px 20px;margin-bottom:14px;break-inside:avoid">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
+      <span style="width:9px;height:9px;border-radius:50%;background:#c0392b;flex-shrink:0" aria-hidden="true"></span>
+      <span style="font-size:15px;font-weight:700;color:#0F1D2E">ממצא 1 · המעבר אינו מתבצע לפי בעלות ברורה</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:12px">
+      <div style="background:#F7F3EC;border-radius:8px;padding:12px 14px"><div class="sec-head">בשדה</div><p style="font-size:12.5px;line-height:1.5;margin:0">לא תמיד ברור מי אחראי לסגירת המעבר לאחר הקליטה.</p></div>
+      <div style="background:#F7F3EC;border-radius:8px;padding:12px 14px"><div class="sec-head">בניהול ביניים</div><p style="font-size:12.5px;line-height:1.5;margin:0">קיימת ציפייה שהצוות ״יעקוב״, בלי שהוגדר מי ומתי.</p></div>
+      <div style="background:#F7F3EC;border-radius:8px;padding:12px 14px"><div class="sec-head">בהנהלה</div><p style="font-size:12.5px;line-height:1.5;margin:0">התהליך נתפס כמוגדר יותר ממה שהוא בפועל.</p></div>
+    </div>
+    <p style="font-size:13px;line-height:1.6;margin-bottom:10px"><strong>פער התפיסה בין השכבות.</strong> 86% מההנהלה סימנו שהתהליך מוגדר, לעומת 31% מהשדה <span class="demo-tag">נתון מדומה</span></p>
+    <table>
+      <tbody>
+        <tr><td style="width:120px;font-weight:700;color:#7f600d;font-size:12px">מה נצפה</td><td style="font-size:13px">ב-27 מתוך 68 תיקים לא נמצא תיעוד של מי קיבל את המקרה <span class="demo-tag">נתון מדומה</span></td></tr>
+        <tr><td style="font-weight:700;color:#7f600d;font-size:12px">מה המקור</td><td style="font-size:13px">שלושת השאלונים, נתונים תפעוליים ושתי שיחות עומק.</td></tr>
+        <tr><td style="font-weight:700;color:#7f600d;font-size:12px">מה המשמעות</td><td style="font-size:13px">ללא בעלות מוגדרת, המעבר תלוי ביוזמה אישית ולא בתהליך.</td></tr>
+        <tr><td style="font-weight:700;color:#7f600d;font-size:12px">מה עדיין לא ידוע</td><td style="font-size:13px">האם התיעוד החסר משקף מעבר שלא בוצע, או מעבר שבוצע ולא נרשם.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:18px 20px;margin-bottom:14px;break-inside:avoid">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
+      <span style="width:9px;height:9px;border-radius:50%;background:#c0392b;flex-shrink:0" aria-hidden="true"></span>
+      <span style="font-size:15px;font-weight:700;color:#0F1D2E">ממצא 2 · מידע אינו עובר באופן אחיד</span>
+    </div>
+    <table style="margin-bottom:12px">
+      <thead><tr><th>מה עובר בפועל</th><th>מה חסר לעיתים קרובות</th><th>באיזה שלב נוצר הפער</th></tr></thead>
+      <tbody>
+        <tr><td>פרטי קשר, סיבת פנייה, טופס קליטה</td><td>סיכום השיחה, העדפות המוטב, מגבלות זמינות</td><td>בין הקליטה להערכה הראשונית</td></tr>
+        <tr><td>מסמך ההערכה</td><td>הצעד הבא המוסכם ומי אמור לבצע אותו</td><td>בין ההחלטה לשיבוץ</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr><td style="width:120px;font-weight:700;color:#7f600d;font-size:12px">מה נצפה</td><td style="font-size:13px">ב-4 מתוך 10 תיקים שנבדקו ידנית, איש המקצוע הבא חזר לרכזת לבירור מידע <span class="demo-tag">נתון מדומה</span></td></tr>
+        <tr><td style="font-weight:700;color:#7f600d;font-size:12px">מה המקור</td><td style="font-size:13px">בדיקת תיקים מדומה ושאלון השדה.</td></tr>
+        <tr><td style="font-weight:700;color:#7f600d;font-size:12px">מה המשמעות</td><td style="font-size:13px">המידע החסר יוצר עבודה חוזרת ומאריך את זמן המעבר.</td></tr>
+        <tr><td style="font-weight:700;color:#7f600d;font-size:12px">מה עדיין לא ידוע</td><td style="font-size:13px">האם החוסר נובע מהיעדר תבנית או מהיעדר זמן למלא אותה.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:18px 20px;margin-bottom:8px;break-inside:avoid">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
+      <span style="width:9px;height:9px;border-radius:50%;background:#c0392b;flex-shrink:0" aria-hidden="true"></span>
+      <span style="font-size:15px;font-weight:700;color:#0F1D2E">ממצא 3 · הצוות מדווח על עומס ועל קושי לעקוב</span>
+    </div>
+    <p style="font-size:13px;line-height:1.6;margin-bottom:12px">העומס המדווח אינו גוש אחד. הפרדנו בין ארבעה סוגים, משום שכל אחד מהם מצריך פעולה אחרת.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+      <div style="background:#F7F3EC;border-radius:8px;padding:12px 14px"><div class="sec-head">עומס אמיתי</div><p style="font-size:12.5px;line-height:1.5;margin:0">מספר התיקים לרכזת עלה מ-22 ל-31 בחצי שנה <span class="demo-tag">נתון מדומה</span></p></div>
+      <div style="background:#F7F3EC;border-radius:8px;padding:12px 14px"><div class="sec-head">עומס מחוסר בהירות</div><p style="font-size:12.5px;line-height:1.5;margin:0">זמן שמושקע בבירור מי אחראי ומה השלב הבא.</p></div>
+      <div style="background:#F7F3EC;border-radius:8px;padding:12px 14px"><div class="sec-head">עבודה חוזרת</div><p style="font-size:12.5px;line-height:1.5;margin:0">מידע שנמסר שוב, שיחות שחוזרות על עצמן.</p></div>
+      <div style="background:#F7F3EC;border-radius:8px;padding:12px 14px"><div class="sec-head">מעקבים ידניים</div><p style="font-size:12.5px;line-height:1.5;margin:0">רשימות אישיות, תזכורות ביומן וזיכרון.</p></div>
+    </div>
+    <table>
+      <tbody>
+        <tr><td style="width:120px;font-weight:700;color:#7f600d;font-size:12px">מה נצפה</td><td style="font-size:13px">שלוש מתוך ארבע רכזות מנהלות רשימת מעקב אישית מחוץ למערכת הארגון <span class="demo-tag">נתון מדומה</span></td></tr>
+        <tr><td style="font-weight:700;color:#7f600d;font-size:12px">מה המשמעות</td><td style="font-size:13px">המעקב נשען על אנשים ולא על תהליך, ולכן אינו שורד עומס או היעדרות.</td></tr>
+        <tr><td style="font-weight:700;color:#7f600d;font-size:12px">מה עדיין לא ידוע</td><td style="font-size:13px">איזה חלק מהעומס ייעלם אם הבהירות תשתפר, ואיזה חלק הוא קיבולת חסרה.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===== chapter 05: mechanism ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">המנגנון האפשרי</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 05</div>
+
+  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:18px 20px;margin-bottom:16px;break-inside:avoid">
+    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+      <span style="font-size:11px;font-weight:700;color:#7f600d;background:rgba(212,160,23,.14);padding:4px 10px;border-radius:14px">בהירות</span>
+      <span style="font-size:11px;font-weight:700;color:#a8301f;background:rgba(192,57,43,.1);padding:4px 10px;border-radius:14px">רצף שבור</span>
+      <span style="font-size:12px;color:#606770">שם המנגנון</span>
+    </div>
+    <div style="font-size:16px;font-weight:700;color:#0F1D2E;margin-bottom:8px">חוסר בהירות בבעלות ובהעברת אחריות בין הקליטה לשלב הבא</div>
+    <p style="font-size:12.5px;line-height:1.6;color:#5a6470;margin:0">משפחת המנגנון: רצף שבור בנקודת ההעברה. התנאי המרכזי לפי מסגרת ALNA הוא בהירות: ״האם ברור מי אחראי לשלב?״ עדשות נוספות שנבחנו: תהליך, התנהגות ומדידה. קודים פנימיים לצורך מעקב בין מחזורים: 05M ו-1A.</p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px">
+    <div style="display:flex;align-items:flex-start;gap:12px;background:#F7F3EC;border-radius:8px;padding:12px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">01</span><div><strong style="font-size:13.5px;color:#0F1D2E">צוואר הבקבוק.</strong> <span style="font-size:13px">מקרים אינם עוברים בזמן משלב הקליטה להמשך טיפול או שיקום.</span></div></div>
+    <div style="display:flex;align-items:flex-start;gap:12px;background:#F7F3EC;border-radius:8px;padding:12px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">02</span><div><strong style="font-size:13.5px;color:#0F1D2E">התנאי הארגוני.</strong> <span style="font-size:13px">לא קיימת הגדרה מספיק ברורה של מי אחראי להעברה, מה חייב לעבור ומתי המעבר נחשב שהושלם.</span></div></div>
+    <div style="display:flex;align-items:flex-start;gap:12px;background:#F7F3EC;border-radius:8px;padding:12px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">03</span><div><strong style="font-size:13.5px;color:#0F1D2E">ההתנהגות בפועל.</strong> <span style="font-size:13px">אנשי הצוות שולחים הודעות, מעדכנים מערכות ומבצעים מעקבים, אך אין פעולה אחידה שמאשרת שהמקרה התקבל והועבר.</span></div></div>
+    <div style="display:flex;align-items:flex-start;gap:12px;background:#F7F3EC;border-radius:8px;padding:12px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">04</span><div><strong style="font-size:13.5px;color:#0F1D2E">ההשפעה על המוטב.</strong> <span style="font-size:13px">המתנה ארוכה יותר, חוסר ודאות לגבי הצעד הבא וסיכון לניתוק מהתהליך.</span></div></div>
+    <div style="display:flex;align-items:flex-start;gap:12px;background:#F7F3EC;border-radius:8px;padding:12px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">05</span><div><strong style="font-size:13.5px;color:#0F1D2E">מה משמר את המצב.</strong> <span style="font-size:13px">הצוות מוצף, אין משוב מהיר על מקרים תקועים, והמעקב נשען על זיכרון אישי או על בדיקות ידניות.</span></div></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px">
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px;border-top:3px solid #1a754d">
+      <div class="sec-head" style="color:#155f3f">תומך בהשערה</div>
+      <ul style="margin:6px 0 0;padding-inline-start:16px;font-size:12px;line-height:1.55">
+        <li>פער תפיסה בין ההנהלה לשדה בשאלת בהירות התהליך</li>
+        <li>היעדר תיעוד של קבלת המקרה ברוב התיקים</li>
+        <li>מעקבים אישיים מחוץ למערכת אצל רוב הרכזות</li>
+        <li>העיכוב מתרכז בנקודת המעבר ולא לאורך כל התהליך</li>
+      </ul>
+    </div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px;border-top:3px solid #c0392b">
+      <div class="sec-head" style="color:#a8301f">מחליש את ההשערה</div>
+      <ul style="margin:6px 0 0;padding-inline-start:16px;font-size:12px;line-height:1.55">
+        <li>עלייה אמיתית בעומס התיקים באותה תקופה</li>
+        <li>בשתי תכניות קיימת רשימת המתנה בפועל</li>
+        <li>חלק מהעיכובים קשורים לזמינות המוטב</li>
+        <li>העיכוב אינו אחיד בין הצוותים</li>
+      </ul>
+    </div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px;border-top:3px solid #8a929b">
+      <div class="sec-head" style="color:#606770">עדיין לא ידוע</div>
+      <ul style="margin:6px 0 0;padding-inline-start:16px;font-size:12px;line-height:1.55">
+        <li>מהו החלק היחסי של קיבולת חסרה לעומת חוסר בהירות</li>
+        <li>זמני התגובה של גורמי הפניה חיצוניים</li>
+        <li>שונות בין צוותים שלא נבדקה במחזור זה</li>
+        <li>האם תיעוד חסר מעיד על מעבר שלא בוצע</li>
+      </ul>
     </div>
   </div>
 
-  <!-- ===== 1. executive summary ===== -->
-  <h2 style="font-size:21px;font-weight:700;margin:34px 0 12px;padding-top:14px;border-top:2px solid #0F1D2E">1. תקציר מנהלים</h2>
-  <p style="font-size:14.5px;line-height:1.7">האבחון משלב נתונים תפעוליים, ריאיונות ושאלוני עומק עם ההנהלה, מנהלי הביניים וצוותי השטח. הממצאים אינם רק "מה קרה". לכל דגל שזוהה מצורפות ההשערות שמסבירות אותו, הראיות התומכות, ורמת הביטחון בכל השערה.</p>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:18px 0">
-    <div style="background:#F7F3EC;border-radius:8px;padding:14px 15px;border-top:3px solid #c0392b">
-      <div style="font-size:11.5px;font-weight:700;color:#7f600d;margin-bottom:5px">דגל מרכזי 1</div>
-      <div style="font-size:14px;font-weight:600;color:#0F1D2E">עיכוב בשלב הקליטה</div>
-    </div>
-    <div style="background:#F7F3EC;border-radius:8px;padding:14px 15px;border-top:3px solid #c0392b">
-      <div style="font-size:11.5px;font-weight:700;color:#7f600d;margin-bottom:5px">דגל מרכזי 2</div>
-      <div style="font-size:14px;font-weight:600;color:#0F1D2E">ניצול לא אחיד של שעות טיפול</div>
-    </div>
-    <div style="background:#F7F3EC;border-radius:8px;padding:14px 15px;border-top:3px solid #D4A017">
-      <div style="font-size:11.5px;font-weight:700;color:#7f600d;margin-bottom:5px">דגל מרכזי 3</div>
-      <div style="font-size:14px;font-weight:600;color:#0F1D2E">עומס לא מאוזן בין צוותים</div>
-    </div>
+  <div style="background:#F7F3EC;border-radius:10px;padding:14px 18px;break-inside:avoid">
+    <p style="font-size:12.5px;line-height:1.6;margin:0"><strong style="color:#0F1D2E">הדגשה.</strong> זהו מנגנון אפשרי שמסביר את הממצאים, ולא קביעה סיבתית מוכחת. נדרשת בדיקה נוספת כדי לאשש או לדחות אותו.</p>
   </div>
 
-  <!-- ===== 2. participant journey ===== -->
-  <h2 style="font-size:21px;font-weight:700;margin:36px 0 12px;padding-top:14px;border-top:2px solid #0F1D2E">2. מסע המשתתף: היכן נוצרים הדגלים</h2>
-  <p style="font-size:14.5px;line-height:1.7;margin-bottom:16px">כל דגל ממוקם על השלב במסע שבו הוא נוצר בפועל, כך שברור מייד היכן ההשפעה על המטופל הכי משמעותית.</p>
-  <div style="display:flex;align-items:stretch;gap:0;margin-bottom:6px">
-    <div style="flex:1;text-align:center;padding:14px 8px;background:#F7F3EC;border-radius:8px 0 0 8px">
-      <div style="width:11px;height:11px;border-radius:50%;background:#1f8a5b;margin:0 auto 8px"></div>
-      <div style="font-size:12.5px;font-weight:700;color:#0F1D2E">פנייה</div>
+  <!-- ===== chapter 06: recommendation status ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">מצב ההמלצה</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 06</div>
+
+  <table style="margin-bottom:12px">
+    <thead><tr><th>מצב</th><th>משמעות</th><th>במקרה זה</th></tr></thead>
+    <tbody>
+      <tr style="background:#F7F3EC"><td><code style="font-size:12.5px">recommended</code></td><td>יש בסיס להמלצה על התערבות ראשונית ומוגבלת.</td><td><strong style="color:#155f3f">נבחר</strong></td></tr>
+      <tr><td><code style="font-size:12.5px">direction_possible_needs_more_info</code></td><td>כיוון אפשרי, אך נדרש מידע נוסף לפני החלטה.</td><td>לא</td></tr>
+      <tr><td><code style="font-size:12.5px">no_basis_yet</code></td><td>עדיין אין בסיס מספיק להמלצה.</td><td>לא</td></tr>
+      <tr><td><code style="font-size:12.5px">fit_not_tested</code></td><td>נבדק ונמצא לא מתאים לארגון בשלב זה.</td><td>לא</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:13px;line-height:1.65">מצב ההמלצה מתייחס לפעולה ראשונית שאפשר לבדוק, ולא לטענה שהמנגנון הוכח. הבסיס להמלצה הוא שילוב של שלושה דברים: הממצאים מצביעים בעקביות על אותה נקודת מעבר, ההתערבות המוצעת אינה יקרה ואינה בלתי הפיכה, וניתן למדוד את ביצועה בתוך ארבעה שבועות. אם ההתערבות תבוצע ולא יחול שינוי, זו תהיה ראיה משמעותית נגד המנגנון, ולא כישלון של הפיילוט.</p>
+
+  <!-- ===== chapter 07: intervention options ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">אפשרויות ההתערבות</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 07</div>
+
+  <div style="background:#0F1D2E;border-radius:12px;padding:16px 20px;margin-bottom:16px">
+    <div style="font-size:11.5px;font-weight:700;letter-spacing:.08em;color:#D4A017;margin-bottom:10px;text-align:center">סדר החשיבה של ALNA</div>
+    <div style="display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center">
+      <span class="chain-chip">לבטל</span><span class="chain-arrow" aria-hidden="true">←</span>
+      <span class="chain-chip">לפשט</span><span class="chain-arrow" aria-hidden="true">←</span>
+      <span class="chain-chip">להעביר לאדם המתאים</span><span class="chain-arrow" aria-hidden="true">←</span>
+      <span class="chain-chip">לחבר מערכות</span><span class="chain-arrow" aria-hidden="true">←</span>
+      <span class="chain-chip">לאוטומט</span>
     </div>
-    <div style="flex:1;text-align:center;padding:14px 8px;background:#F7F3EC">
-      <div style="width:11px;height:11px;border-radius:50%;background:#c0392b;margin:0 auto 8px"></div>
-      <div style="font-size:12.5px;font-weight:700;color:#0F1D2E">אינטייק</div>
-    </div>
-    <div style="flex:1;text-align:center;padding:14px 8px;background:#F7F3EC">
-      <div style="width:11px;height:11px;border-radius:50%;background:#D4A017;margin:0 auto 8px"></div>
-      <div style="font-size:12.5px;font-weight:700;color:#0F1D2E">טיפול פעיל</div>
-    </div>
-    <div style="flex:1;text-align:center;padding:14px 8px;background:#F7F3EC">
-      <div style="width:11px;height:11px;border-radius:50%;background:#1f8a5b;margin:0 auto 8px"></div>
-      <div style="font-size:12.5px;font-weight:700;color:#0F1D2E">סיום</div>
-    </div>
-    <div style="flex:1;text-align:center;padding:14px 8px;background:#F7F3EC;border-radius:0 8px 8px 0">
-      <div style="width:11px;height:11px;border-radius:50%;background:#D4A017;margin:0 auto 8px"></div>
-      <div style="font-size:12.5px;font-weight:700;color:#0F1D2E">מעקב</div>
-    </div>
-  </div>
-  <div style="display:flex;gap:16px;font-size:12px;color:#5a646e;margin-bottom:6px">
-    <span><span style="color:#c0392b;font-weight:700">●</span> חסימה משמעותית</span>
-    <span><span style="color:#7f600d;font-weight:700">●</span> חסימה חלקית</span>
-    <span><span style="color:#1a754d;font-weight:700">●</span> תקין</span>
+    <div style="text-align:center;font-size:12px;color:#b8c0c9;margin-top:8px">ורק אז לבדוק AI</div>
   </div>
 
-  <!-- ===== 3. strengths ===== -->
-  <h2 style="font-size:21px;font-weight:700;margin:36px 0 12px;padding-top:14px;border-top:2px solid #0F1D2E">3. מה עובד היטב בארגון</h2>
-  <p style="font-size:14.5px;line-height:1.7;margin-bottom:14px">האבחון אינו מתמקד רק בחסמים. חשוב לשמר את מה שכבר עובד תוך כדי הטיפול בנקודות התורפה.</p>
+  <div style="border:2px solid #D4A017;border-radius:10px;padding:16px 18px;margin-bottom:12px;break-inside:avoid">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+      <span style="font-size:14.5px;font-weight:700;color:#0F1D2E">אפשרות 1 · שינוי תהליך ללא טכנולוגיה</span>
+      <span style="font-size:11px;font-weight:700;color:#155f3f;background:rgba(31,138,91,.12);padding:4px 10px;border-radius:14px">מומלץ להתחיל כאן</span>
+    </div>
+    <ul style="margin:0;padding-inline-start:18px;font-size:13px;line-height:1.65">
+      <li>הגדרת owner לכל מעבר</li>
+      <li>checklist קצר להעברת מקרה</li>
+      <li>אישור קבלה מצד הגורם הבא</li>
+      <li>זמן יעד ברור</li>
+      <li>בדיקה שבועית קצרה של מקרים תקועים</li>
+    </ul>
+  </div>
+
+  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:16px 18px;margin-bottom:12px;break-inside:avoid">
+    <div style="font-size:14.5px;font-weight:700;color:#0F1D2E;margin-bottom:10px">אפשרות 2 · שינוי שגרת עבודה</div>
+    <ul style="margin:0 0 10px;padding-inline-start:18px;font-size:13px;line-height:1.65">
+      <li>ישיבת תיאום קצרה</li>
+      <li>רשימת מקרים תקועים</li>
+      <li>חלוקת אחריות ברורה</li>
+      <li>מנגנון הסלמה כאשר אין תגובה</li>
+    </ul>
+    <p style="font-size:12.5px;color:#5a6470;margin:0">משלימה את אפשרות 1 ואינה מחליפה אותה. בשלב זה מומלץ רק הרכיב של הבדיקה השבועית.</p>
+  </div>
+
+  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:16px 18px;margin-bottom:12px;break-inside:avoid">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+      <span style="font-size:14.5px;font-weight:700;color:#0F1D2E">אפשרות 3 · כלי workflow או מעקב</span>
+      <span style="font-size:11px;font-weight:700;color:#a8301f;background:rgba(192,57,43,.1);padding:4px 10px;border-radius:14px">לא מומלץ כרגע</span>
+    </div>
+    <p style="font-size:13px;line-height:1.6;margin:0">יכולה להתאים אם התהליך כבר ברור, אך קשה לנהל אותו בקנה מידה גדול. לא מומלץ כרגע, משום שכלי שמנהל תהליך שאינו מוגדר מקבע את אי הבהירות ומוסיף עבודת תחזוקה.</p>
+  </div>
+
+  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:16px 18px;break-inside:avoid">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+      <span style="font-size:14.5px;font-weight:700;color:#0F1D2E">אפשרות 4 · מערכת חדשה או אוטומציה</span>
+      <span style="font-size:11px;font-weight:700;color:#a8301f;background:rgba(192,57,43,.1);padding:4px 10px;border-radius:14px">לא מומלץ כרגע</span>
+    </div>
+    <p style="font-size:13px;line-height:1.6;margin:0">תיבחן רק אם יתברר שהבעיה היא בעיקר במעקב ובחיבור בין מערכות. לא מומלץ כרגע. הראיות אינן מצביעות על בעיית מערכות אלא על בעיית הגדרה ובעלות. רכש בשלב זה יצרוך משאבים בלי לשנות את המנגנון.</p>
+  </div>
+
+  <!-- ===== chapter 08: chosen recommendation ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">ההמלצה שנבחרה</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 08</div>
+
+  <div style="background:#F7F3EC;border-radius:10px;padding:18px 20px;margin-bottom:16px;break-inside:avoid">
+    <p style="font-size:14.5px;font-weight:600;line-height:1.6;text-align:center;color:#0F1D2E;margin:0">להפעיל במשך ארבעה שבועות תהליך handoff אחיד ומוגבל בצוות אחד, הכולל owner ברור, checklist קצר, אישור קבלה ומעקב אחר מקרים שלא עברו בזמן.</p>
+  </div>
+
+  <p style="font-size:13.5px;line-height:1.7;margin-bottom:16px"><strong style="color:#0F1D2E">התאמה למנגנון.</strong> ההתערבות פועלת ישירות על התנאי שזוהה, בהירות הבעלות, ולא על סימפטום העומס. <strong style="color:#0F1D2E">התאמה לצוות.</strong> היא מוסיפה כשלוש דקות לכל העברה, אינה משנה הגדרות תפקיד ואינה מחייבת הכשרה ארוכה. <strong style="color:#0F1D2E">התאמה לתהליך.</strong> נקודת המעבר כבר קיימת בשגרה, ולכן ההתערבות מתווספת אליה ואינה יוצרת שלב חדש. <strong style="color:#0F1D2E">יכולת הטמעה.</strong> קיים בעל תפקיד שיכול להוביל, ההתערבות מוגבלת לצוות אחד ולארבעה שבועות, וניתן לעצור אותה בלי עלות שקועה.</p>
+
+  <table style="margin-bottom:8px">
+    <tbody>
+      <tr><td style="width:150px;font-weight:700;color:#7f600d;font-size:12.5px">הבעיה</td><td style="font-size:13px">מקרים אינם עוברים בזמן מהקליטה לשלב הבא.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">המנגנון שאליו קשורה</td><td style="font-size:13px">חוסר בהירות בבעלות ובהעברת אחריות, handoff, בהקשר PDC 05M ו-A1.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מה משתנה בפועל</td><td style="font-size:13px">לכל מעבר יש owner מוגדר מראש, רשימת מידע קצרה שעוברת איתו, ואישור קבלה מצד הגורם הבא בתוך יום עבודה אחד.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מה העבודה שנעלמת</td><td style="font-size:13px">מעקבים ידניים אחר מקרים שלא ברור מה קרה להם, שיחות בירור חוזרות, ורשימות אישיות מחוץ למערכת.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">על מי עובר הנטל שמוסר?</td><td style="font-size:13px">ההתערבות מפחיתה מעקבים ידניים של רכזת הקליטה, אך מוסיפה לבעל התפקיד הבא פעולה קצרה של אישור קבלה. יש לבדוק שהפעולה אינה יוצרת עומס חדש. הבדיקה נכללת בשאלון ה-follow-up ובבדיקה השבועית.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מי אחראי</td><td style="font-size:13px">רכזת התחום מובילה. מנהלת המרכז מאשרת ומקבלת עדכון שבועי.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מה נדרש מהצוות</td><td style="font-size:13px">כשלוש דקות לכל העברה: מילוי checklist קצר, סימון owner, ואישור קבלה מצד המקבל.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מה הסיכון</td><td style="font-size:13px">שהאישור יהפוך לפעולה טכנית ללא תוכן. שהעומס יעבור לגורם המקבל. שהצוות יראה בכך בקרה ולא תמיכה.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מה לא מומלץ כרגע</td><td style="font-size:13px">רכש מערכת, אוטומציה, שינוי מבנה ארגוני, או הרחבת הפיילוט ליותר מצוות אחד.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">תנאי עצירה</td><td style="font-size:13px">עלייה מדווחת בעומס אצל הגורם המקבל, פגיעה בזמינות למוטבים, או שיעור ביצוע מתחת ל-40% אחרי שבועיים <span class="demo-tag">נתון מדומה</span></td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מה נדרש כדי להרחיב</td><td style="font-size:13px">שיעור ביצוע יציב מעל 80% בשבועיים האחרונים, ללא עלייה בעומס המדווח, ועם סימן ראשוני לקיצור זמן המעבר.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ===== chapter 09: training ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">אימון מכוון והטמעת ההתנהגות</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 09</div>
+
+  <div style="background:#F7F3EC;border-radius:10px;padding:16px 20px;margin-bottom:16px">
+    <div class="sec-head" style="text-align:center">התנהגות היעד</div>
+    <p style="font-size:14px;font-weight:600;line-height:1.6;text-align:center;color:#0F1D2E;margin:6px 0 0">בכל העברה של מקרה, בעל התפקיד שמקבל את המקרה מאשר קבלה בתוך יום עבודה אחד ומעדכן מה הצעד הבא.</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">מי צריך לבצע אותה</div><p style="font-size:12.5px;line-height:1.55;margin:0">המעריך המקצועי ואחראית השיבוץ, כל אחד בנקודת המעבר שלו. רכזת הקליטה מבצעת את צד המסירה.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">באיזה רגע היא מתבצעת</div><p style="font-size:12.5px;line-height:1.55;margin:0">מיד עם קבלת ההודעה על מקרה חדש, ולא בסוף היום או בישיבה השבועית.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">איך מתרגלים אותה</div><p style="font-size:12.5px;line-height:1.55;margin:0">הדגמה קצרה של כעשר דקות בישיבת הצוות, ואחריה תרגול על שלושה מקרים מדומים שנכתבו מראש.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">איזה משוב מתקבל</div><p style="font-size:12.5px;line-height:1.55;margin:0">בדיקה שבועית קצרה שמציגה כמה העברות אושרו בזמן, ברמת הצוות ולא ברמת האדם.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">מה קורה כשהיא לא מתבצעת</div><p style="font-size:12.5px;line-height:1.55;margin:0">המקרה מופיע ברשימת המקרים התקועים, ורכזת התחום בודקת מה חסם. הבדיקה היא על התהליך, לא על האדם.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">מי תומך בצוות</div><p style="font-size:12.5px;line-height:1.55;margin:0">רכזת התחום זמינה לשאלות בשבועיים הראשונים, ומוסמכת לשנות את ה-checklist אם הוא מכביד.</p></div>
+  </div>
+
+  <div style="background:#F7F3EC;border-radius:10px;padding:14px 18px;break-inside:avoid">
+    <p style="font-size:12.5px;line-height:1.6;margin:0"><strong style="color:#0F1D2E">התאמה תוך כדי.</strong> אם הצוות מדווח שהתרגול אינו מתאים למקרים מסוימים, למשל מקרים דחופים או מוטבים ללא זמינות, מותאם כלל חריגים ברור במקום לוותר על ההתנהגות כולה.</p>
+  </div>
+
+  <!-- ===== chapter 10: measurement ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">מדידה</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 10</div>
+
+  <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;background:#F7F3EC;border-radius:10px;padding:18px;margin-bottom:8px">
+    <div style="text-align:center">
+      <div style="font-size:12px;color:#5a646e;margin-bottom:4px">שיעור העברות עם אישור קבלה</div>
+      <div style="font-size:13px;color:#606770">0% <span aria-hidden="true">‹</span> <strong style="font-size:20px;color:#0F1D2E">64%</strong> <span aria-hidden="true">‹</span> 80%</div>
+    </div>
+    <div style="text-align:center">
+      <div style="font-size:12px;color:#5a646e;margin-bottom:4px">זמן ממוצע מקליטה לשלב הבא</div>
+      <div style="font-size:13px;color:#606770">14 ימים <span aria-hidden="true">›</span> <strong style="font-size:20px;color:#0F1D2E">15.1</strong> <span aria-hidden="true">›</span> 19.4</div>
+    </div>
+    <div style="text-align:center">
+      <div style="font-size:12px;color:#5a646e;margin-bottom:4px">מקרים תקועים</div>
+      <div style="font-size:13px;color:#606770">מתחת ל-5 <span aria-hidden="true">›</span> <strong style="font-size:20px;color:#0F1D2E">11</strong> <span aria-hidden="true">›</span> 27</div>
+    </div>
+  </div>
+  <p style="font-size:11.5px;color:#606770;text-align:center;margin-bottom:18px">הסדר: בסיס, מצב נוכחי, יעד. כל הערכים <span class="demo-tag">נתון מדומה</span></p>
+
+  <div style="font-size:14px;font-weight:700;color:#0F1D2E;margin-bottom:4px">מדדי הטמעה</div>
+  <p style="font-size:12.5px;color:#606770;margin-bottom:8px">בודקים אם ההתערבות בוצעה בפועל. כל הערכים מדומים.</p>
+  <table style="margin-bottom:16px">
+    <thead><tr><th>מדד</th><th>בסיס</th><th>יעד</th><th>ערך נוכחי</th><th>מקור</th><th>תדירות</th><th>בעלים</th></tr></thead>
+    <tbody>
+      <tr><td>שיעור מקרים עם owner מוגדר</td><td>34%</td><td>90%</td><td><strong>71%</strong></td><td>רשימת מעבר</td><td>שבועי</td><td>רכזת תחום</td></tr>
+      <tr><td>שיעור העברות עם אישור קבלה</td><td>לא נמדד במחזור הבסיס</td><td>80%</td><td><strong>64%</strong></td><td>רשימת מעבר</td><td>שבועי</td><td>רכזת תחום</td></tr>
+      <tr><td>אישור בתוך יום עבודה אחד</td><td>לא נמדד במחזור הבסיס</td><td>75%</td><td><strong>58%</strong></td><td>רשימת מעבר</td><td>שבועי</td><td>רכזת תחום</td></tr>
+      <tr><td>מקרים שנשארו ללא בעלות</td><td>27</td><td>מתחת ל-5</td><td><strong>9</strong></td><td>בדיקה שבועית</td><td>שבועי</td><td>רכזת תחום</td></tr>
+    </tbody>
+  </table>
+
+  <div style="font-size:14px;font-weight:700;color:#0F1D2E;margin-bottom:4px">מדדי תוצאה</div>
+  <p style="font-size:12.5px;color:#606770;margin-bottom:8px">בודקים אם משהו השתנה עבור המוטב ועבור הארגון. כל הערכים מדומים.</p>
+  <table style="margin-bottom:8px">
+    <thead><tr><th>מדד</th><th>בסיס</th><th>אחרי ארבעה שבועות</th><th>מקור</th></tr></thead>
+    <tbody>
+      <tr><td>זמן ממוצע מהקליטה לשלב הבא</td><td>19.4 ימי עבודה</td><td><strong>15.1 ימי עבודה</strong></td><td>נתונים תפעוליים</td></tr>
+      <tr><td>מספר מקרים תקועים</td><td>27</td><td><strong>11</strong></td><td>בדיקה שבועית</td></tr>
+      <tr><td>שיעור המשך לשלב הבא</td><td>60%</td><td><strong>72%</strong></td><td>נתונים תפעוליים</td></tr>
+      <tr><td>שיעור נשירה לפני המפגש הראשון</td><td>18%</td><td><strong>14%</strong></td><td>נתונים תפעוליים</td></tr>
+      <tr><td>דיווח צוות על בהירות ועומס</td><td>2.4 מתוך 5</td><td><strong>3.3 מתוך 5</strong></td><td>שאלון קצר</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:11.5px;color:#606770">כל הערכים בשתי הטבלאות הם <span class="demo-tag">נתון מדומה</span></p>
+
+  <div style="background:#F7F3EC;border-radius:10px;padding:14px 18px;margin-top:12px;break-inside:avoid">
+    <p style="font-size:12.5px;line-height:1.6;margin:0 0 8px"><strong style="color:#0F1D2E">הבחנה חשובה.</strong> אם ההתערבות לא בוצעה, אי אפשר להסיק שהיא לא עבדה. קודם צריך לבדוק אם ההתנהגות אכן התקיימה.</p>
+    <p style="font-size:12.5px;line-height:1.6;margin:0"><strong style="color:#0F1D2E">הסתייגות לגבי ההשפעה על המוטב.</strong> ההשפעה על המוטבים בדוח זה מוסקת ממדדי תהליך, כגון זמן המתנה, מקרים תקועים ושיעור המשך, ולא מדיווח ישיר של המוטבים עצמם. כדי לדעת מה חוו בפועל נדרש איסוף משוב ישיר, שלא נכלל במחזור זה.</p>
+  </div>
+
+  <!-- ===== chapter 11: follow-up ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">follow-up</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 11</div>
+  <p style="font-size:13px;line-height:1.6;margin-bottom:14px">שאלון קצר שממולא בסוף ארבעת השבועות על ידי רכזת התחום, בשיתוף הצוות. התשובות המוצגות כאן הן דוגמה מדומה.</p>
+
   <div style="display:flex;flex-direction:column;gap:9px">
-    <div style="display:flex;gap:11px;align-items:flex-start"><span style="color:#1a754d;font-weight:700;font-size:15px" aria-hidden="true">✓</span><span style="font-size:14.5px;line-height:1.5"><strong>רציפות טיפולית גבוהה לאחר האינטייק</strong>: מטופלים שעברו קליטה ממשיכים בתהליך ברציפות ובליווי יציב.</span></div>
-    <div style="display:flex;gap:11px;align-items:flex-start"><span style="color:#1a754d;font-weight:700;font-size:15px" aria-hidden="true">✓</span><span style="font-size:14.5px;line-height:1.5"><strong>שיתוף פעולה טוב בין מקצועות</strong>: תקשורת סדירה ואפקטיבית בין הצוות הרב־מקצועי.</span></div>
-    <div style="display:flex;gap:11px;align-items:flex-start"><span style="color:#1a754d;font-weight:700;font-size:15px" aria-hidden="true">✓</span><span style="font-size:14.5px;line-height:1.5"><strong>שביעות רצון גבוהה בקרב מטופלים</strong>: במיוחד ביחס לאיכות הליווי הטיפולי הישיר.</span></div>
+    <div style="border:1px solid #e7e2d8;border-radius:8px;padding:12px 15px"><div style="font-size:13.5px;font-weight:700;color:#0F1D2E;margin-bottom:5px">1. האם הפעולה בוצעה?</div><p style="font-size:13px;line-height:1.55;margin:0">כן, חלקית. התהליך הופעל בצוות אחד מתוך שניים שתוכננו. <span class="demo-tag">נתון מדומה</span></p></div>
+    <div style="border:1px solid #e7e2d8;border-radius:8px;padding:12px 15px"><div style="font-size:13.5px;font-weight:700;color:#0F1D2E;margin-bottom:5px">2. האם ההתנהגות בוצעה בפועל?</div><p style="font-size:13px;line-height:1.55;margin:0">ב-64% מההעברות התקבל אישור קבלה, מתוכם 58% בתוך יום עבודה אחד. <span class="demo-tag">נתון מדומה</span></p></div>
+    <div style="border:1px solid #e7e2d8;border-radius:8px;padding:12px 15px"><div style="font-size:13.5px;font-weight:700;color:#0F1D2E;margin-bottom:5px">3. מה עזר ומה הקשה?</div><p style="font-size:13px;line-height:1.55;margin:0">עזר: ה-checklist הקצר ורשימת המקרים התקועים. הקשה: העברות שהגיעו בסוף יום, ומקרים דחופים שלא התאימו לתהליך. <span class="demo-tag">נתון מדומה</span></p></div>
+    <div style="border:1px solid #e7e2d8;border-radius:8px;padding:12px 15px"><div style="font-size:13.5px;font-weight:700;color:#0F1D2E;margin-bottom:5px">4. האם התהליך השתנה?</div><p style="font-size:13px;line-height:1.55;margin:0">כן. קיים כעת רגע מוגדר שבו האחריות עוברת, גם כשהוא לא תמיד מבוצע בזמן. <span class="demo-tag">נתון מדומה</span></p></div>
+    <div style="border:1px solid #e7e2d8;border-radius:8px;padding:12px 15px"><div style="font-size:13.5px;font-weight:700;color:#0F1D2E;margin-bottom:5px">5. האם חל שינוי בתוצאה?</div><p style="font-size:13px;line-height:1.55;margin:0">הנתונים מצביעים על קיצור של כארבעה ימי עבודה בזמן המעבר. התקופה קצרה מכדי לקבוע מגמה. <span class="demo-tag">נתון מדומה</span></p></div>
+    <div style="border:1px solid #e7e2d8;border-radius:8px;padding:12px 15px"><div style="font-size:13.5px;font-weight:700;color:#0F1D2E;margin-bottom:5px">6. מה עדיין לא ידוע?</div><p style="font-size:13px;line-height:1.55;margin:0">האם השיפור נובע מההתערבות או מירידה זמנית בהיקף הפניות באותה תקופה. <span class="demo-tag">נתון מדומה</span></p></div>
+    <div style="border:1px solid #e7e2d8;border-radius:8px;padding:12px 15px"><div style="font-size:13.5px;font-weight:700;color:#0F1D2E;margin-bottom:5px">7. האם להמשיך, לשנות או להפסיק?</div><p style="font-size:13px;line-height:1.55;margin:0">להמשיך עם שינוי אחד: כלל חריגים למקרים דחופים, והעברת נקודת האישור לתחילת היום. <span class="demo-tag">נתון מדומה</span></p></div>
   </div>
 
-  <!-- ===== 4. what blocks ===== -->
-  <h2 style="font-size:21px;font-weight:700;margin:36px 0 12px;padding-top:14px;border-top:2px solid #0F1D2E">4. מה מעכב את התהליך (הדגלים)</h2>
+  <!-- ===== chapter 12: org decision ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">החלטת הארגון</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 12</div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+    <div>
+      <div class="sec-head" style="color:#155f3f">מה הארגון מאשר</div>
+      <div style="display:flex;flex-direction:column;gap:6px;margin-top:6px">
+        <div style="display:flex;gap:9px;align-items:flex-start"><span style="color:#155f3f;font-weight:700;font-size:13px" aria-hidden="true">✓</span><span style="font-size:13px;line-height:1.5">הפעלת תהליך ההעברה האחיד בצוות התעסוקה</span></div>
+        <div style="display:flex;gap:9px;align-items:flex-start"><span style="color:#155f3f;font-weight:700;font-size:13px" aria-hidden="true">✓</span><span style="font-size:13px;line-height:1.5">ארבעה שבועות, החל מ-6.7.2026</span></div>
+        <div style="display:flex;gap:9px;align-items:flex-start"><span style="color:#155f3f;font-weight:700;font-size:13px" aria-hidden="true">✓</span><span style="font-size:13px;line-height:1.5">בדיקה שבועית קצרה של מקרים תקועים</span></div>
+        <div style="display:flex;gap:9px;align-items:flex-start"><span style="color:#155f3f;font-weight:700;font-size:13px" aria-hidden="true">✓</span><span style="font-size:13px;line-height:1.5">שאלון follow-up בסיום</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-head" style="color:#606770">מה הארגון אינו מאשר כרגע</div>
+      <div style="display:flex;flex-direction:column;gap:6px;margin-top:6px">
+        <div style="display:flex;gap:9px;align-items:flex-start"><span style="color:#606770;font-weight:700;font-size:13px" aria-hidden="true">○</span><span style="font-size:13px;line-height:1.5">רכש כלי workflow או מערכת חדשה</span></div>
+        <div style="display:flex;gap:9px;align-items:flex-start"><span style="color:#606770;font-weight:700;font-size:13px" aria-hidden="true">○</span><span style="font-size:13px;line-height:1.5">הרחבה לצוותים נוספים לפני הבדיקה</span></div>
+        <div style="display:flex;gap:9px;align-items:flex-start"><span style="color:#606770;font-weight:700;font-size:13px" aria-hidden="true">○</span><span style="font-size:13px;line-height:1.5">שינוי בהגדרות תפקיד</span></div>
+        <div style="display:flex;gap:9px;align-items:flex-start"><span style="color:#606770;font-weight:700;font-size:13px" aria-hidden="true">○</span><span style="font-size:13px;line-height:1.5">הוספת דיווח קבוע להנהלה</span></div>
+      </div>
+    </div>
+  </div>
+
   <table>
-    <thead><tr><th>דגל</th><th>שלב</th><th>מידת השפעה</th><th>מגמה</th></tr></thead>
     <tbody>
-      <tr><td>זמן המתנה ממושך לקליטה</td><td>אינטייק</td><td><span style="color:#c0392b;font-weight:700">גבוהה</span></td><td>מחמיר</td></tr>
-      <tr><td>ניצול חלקי של שעות טיפול מוקצות</td><td>טיפול פעיל</td><td><span style="color:#c0392b;font-weight:700">גבוהה</span></td><td>יציב</td></tr>
-      <tr><td>עומס תיקים לא מאוזן בין מטפלים</td><td>טיפול פעיל</td><td><span style="color:#7f600d;font-weight:700">בינונית</span></td><td>מחמיר</td></tr>
-      <tr><td>שיעור אי־הגעה גבוה (No-show)</td><td>אינטייק</td><td><span style="color:#7f600d;font-weight:700">בינונית</span></td><td>יציב</td></tr>
+      <tr><td style="width:150px;font-weight:700;color:#7f600d;font-size:12.5px">מי מוביל</td><td style="font-size:13px">רכזת התחום. מנהלת המרכז מלווה ומאשרת שינויים.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">לוח זמנים</td><td style="font-size:13px">6.7.2026 עד 2.8.2026, עם בדיקה שבועית של עשרים דקות <span class="demo-tag">נתון מדומה</span></td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מתי בודקים מחדש</td><td style="font-size:13px">בסיום ארבעת השבועות, במסגרת המחזור הבא של האבחון.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מה ייחשב הצלחה</td><td style="font-size:13px">ביצוע ההתנהגות ביותר מ-75% מההעברות, בלי עלייה בעומס המדווח אצל הגורם המקבל.</td></tr>
+      <tr><td style="font-weight:700;color:#7f600d;font-size:12.5px">מה יגרום לעצירה או לשינוי</td><td style="font-size:13px">עלייה בעומס אצל הגורם המקבל, פגיעה בזמינות למוטבים, או ביצוע נמוך מתמשך שמעיד שהתהליך אינו מתאים לשגרת העבודה.</td></tr>
     </tbody>
   </table>
 
-  <!-- ===== 5. reasoning — hypotheses ===== -->
-  <h2 style="font-size:21px;font-weight:700;margin:36px 0 6px;padding-top:14px;border-top:2px solid #0F1D2E">5. מה מסביר את הדגלים: תהליך ה־Reasoning</h2>
-  <p style="font-size:14.5px;line-height:1.7;margin-bottom:16px">זהו העמוד המרכזי בדוח. עבור כל דגל, ALNA בונה השערות שעשויות להסביר אותו, מדרגת אותן לפי רמת ביטחון על סמך הראיות שנאספו, ומציגה את הראיות עצמן.</p>
+  <!-- ===== chapter 13: next cycle ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">מה יקרה במחזור הבא</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 13</div>
+  <p style="font-size:13.5px;line-height:1.65;margin-bottom:14px">ALNA עובדת במחזורים. המנגנון אינו נעלם בסוף המחזור והוא אינו נכתב מחדש. הוא נשמר, ומקבל תצפית חדשה שמצטרפת לקודמות.</p>
 
-  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:18px 20px;margin-bottom:14px;break-inside:avoid">
-    <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
-      <span style="width:9px;height:9px;border-radius:50%;background:#c0392b;flex-shrink:0" aria-hidden="true"></span>
-      <span style="font-size:15px;font-weight:700;color:#0F1D2E">דגל: זמן המתנה ממושך לקליטה</span>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
-      <div style="background:#F7F3EC;border-radius:8px;padding:14px 16px">
-        <div class="sec-head">השערה 1</div>
-        <div style="font-size:14.5px;font-weight:600;margin-bottom:9px">עומס גבוה בשלב האינטייק</div>
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-          <span style="font-size:12px;color:#5a646e;white-space:nowrap">רמת ביטחון</span>
-          <div class="conf-bar"><div class="conf-fill" style="width:82%"></div></div>
-          <span style="font-size:12.5px;font-weight:700;color:#7f600d">82%</span>
-        </div>
-        <div style="font-size:11px;font-weight:700;color:#7f600d;letter-spacing:.05em;margin-bottom:6px">ראיות תומכות</div>
-        <div style="display:flex;flex-direction:column;gap:4px">
-          <span style="font-size:13px;color:#3a4450">✓ עומס תיקים גבוה לרכז אינטייק</span>
-          <span style="font-size:13px;color:#3a4450">✓ פער בין תפיסת ההנהלה לדיווחי השטח</span>
-          <span style="font-size:13px;color:#3a4450">✓ זמני תגובה ארוכים בין הפניות</span>
-        </div>
-      </div>
-      <div style="background:#F7F3EC;border-radius:8px;padding:14px 16px">
-        <div class="sec-head">השערה 2</div>
-        <div style="font-size:14.5px;font-weight:600;margin-bottom:9px">כפילויות בתהליך הקליטה</div>
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-          <span style="font-size:12px;color:#5a646e;white-space:nowrap">רמת ביטחון</span>
-          <div class="conf-bar"><div class="conf-fill" style="width:48%;background:#c7b98a"></div></div>
-          <span style="font-size:12.5px;font-weight:700;color:#7f600d">48%</span>
-        </div>
-        <div style="font-size:11px;font-weight:700;color:#7f600d;letter-spacing:.05em;margin-bottom:6px">ראיות תומכות</div>
-        <div style="display:flex;flex-direction:column;gap:4px">
-          <span style="font-size:13px;color:#3a4450">✓ תיעוד כפול בין מערכות מידע</span>
-          <span style="font-size:13px;color:#3a4450">✓ אזכור חוזר בראיונות צוות</span>
-        </div>
-      </div>
-    </div>
+  <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px">
+    <div style="display:flex;align-items:center;gap:12px;background:#F7F3EC;border-radius:8px;padding:11px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">01</span><span style="font-size:13px"><strong>המנגנון נשמר.</strong> אותו מנגנון ממשיך להיות במעקב, עם אותו קוד ואותו הקשר.</span></div>
+    <div style="display:flex;align-items:center;gap:12px;background:#F7F3EC;border-radius:8px;padding:11px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">02</span><span style="font-size:13px"><strong>התצפית החדשה נשמרת.</strong> מה שנצפה במחזור הזה נרשם כתצפית נפרדת, ולא מוחק את הקודמת.</span></div>
+    <div style="display:flex;align-items:center;gap:12px;background:#F7F3EC;border-radius:8px;padding:11px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">03</span><span style="font-size:13px"><strong>לא יוצרים מנגנון חדש סתם כך.</strong> מנגנון חדש נפתח רק כשההשערה עצמה משתנה מהותית, ולא מפני שנפתח מחזור חדש.</span></div>
+    <div style="display:flex;align-items:center;gap:12px;background:#F7F3EC;border-radius:8px;padding:11px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">04</span><span style="font-size:13px"><strong>בודקים מה השתנה.</strong> משווים את מדדי התוצאה לבסיס, ובודקים אם הפער הצטמצם.</span></div>
+    <div style="display:flex;align-items:center;gap:12px;background:#F7F3EC;border-radius:8px;padding:11px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">05</span><span style="font-size:13px"><strong>בודקים אם ההתערבות בוצעה.</strong> לפני כל מסקנה על תוצאה, נבדק שיעור הביצוע בפועל.</span></div>
+    <div style="display:flex;align-items:center;gap:12px;background:#F7F3EC;border-radius:8px;padding:11px 15px"><span style="font-size:12px;font-weight:700;color:#7f600d;flex-shrink:0">06</span><span style="font-size:13px"><strong>מעדכנים את ההחלטה.</strong> ההמלצה עשויה להתחזק, להשתנות או לרדת מהפרק לפי הראיות החדשות.</span></div>
+  </div>
+  <p style="font-size:13px;line-height:1.6;color:#5a6470">הצטברות התצפיות היא מה שמאפשר בהמשך להבחין בין שיפור אמיתי לבין תנודה זמנית. מחזור בודד אינו מספיק לכך.</p>
+
+  <!-- ===== chapter 14: limitations ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">מגבלות</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 14</div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><p style="font-size:12.5px;line-height:1.55;margin:0"><strong style="color:#0F1D2E">הנתונים מדומים.</strong> הדוח נועד להדגמה. אין להסיק ממנו על ארגון אמיתי כלשהו.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><p style="font-size:12.5px;line-height:1.55;margin:0"><strong style="color:#0F1D2E">אין להסיק סיבתיות.</strong> המנגנון המוצג הוא השערה נתמכת, לא גורם מוכח.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><p style="font-size:12.5px;line-height:1.55;margin:0"><strong style="color:#0F1D2E">לא כל המדדים נמדדו ישירות.</strong> חלקם מבוססים על אומדן או על דגימה קטנה.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><p style="font-size:12.5px;line-height:1.55;margin:0"><strong style="color:#0F1D2E">חלק מהמידע מבוסס על דיווחי צוות.</strong> דיווח סובייקטיבי הוא ראיה חשובה, אך אינו מדידה אובייקטיבית.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><p style="font-size:12.5px;line-height:1.55;margin:0"><strong style="color:#0F1D2E">ייתכנו הסברים נוספים.</strong> קיבולת, גורמים חיצוניים ושונות בין צוותים נותרו פתוחים.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><p style="font-size:12.5px;line-height:1.55;margin:0"><strong style="color:#0F1D2E">נדרש מחזור המשך.</strong> ארבעה שבועות מספיקים לבדוק ביצוע, לא לבסס תוצאה.</p></div>
   </div>
 
-  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:18px 20px;margin-bottom:14px;break-inside:avoid">
-    <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
-      <span style="width:9px;height:9px;border-radius:50%;background:#c0392b;flex-shrink:0" aria-hidden="true"></span>
-      <span style="font-size:15px;font-weight:700;color:#0F1D2E">דגל: ניצול חלקי של שעות טיפול</span>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
-      <div style="background:#F7F3EC;border-radius:8px;padding:14px 16px">
-        <div class="sec-head">השערה 1</div>
-        <div style="font-size:14.5px;font-weight:600;margin-bottom:9px">שיעור No-show גבוה בפגישות ראשונות</div>
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-          <span style="font-size:12px;color:#5a646e;white-space:nowrap">רמת ביטחון</span>
-          <div class="conf-bar"><div class="conf-fill" style="width:74%"></div></div>
-          <span style="font-size:12.5px;font-weight:700;color:#7f600d">74%</span>
-        </div>
-        <div style="font-size:11px;font-weight:700;color:#7f600d;letter-spacing:.05em;margin-bottom:6px">ראיות תומכות</div>
-        <div style="display:flex;flex-direction:column;gap:4px">
-          <span style="font-size:13px;color:#3a4450">✓ פערי תיאום בין קליטה לשיבוץ</span>
-          <span style="font-size:13px;color:#3a4450">✓ העדר תזכורות אוטומטיות למטופל</span>
-        </div>
-      </div>
-      <div style="background:#F7F3EC;border-radius:8px;padding:14px 16px">
-        <div class="sec-head">השערה 2</div>
-        <div style="font-size:14.5px;font-weight:600;margin-bottom:9px">שיבוץ לא אחיד בין מטפלים</div>
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-          <span style="font-size:12px;color:#5a646e;white-space:nowrap">רמת ביטחון</span>
-          <div class="conf-bar"><div class="conf-fill" style="width:61%"></div></div>
-          <span style="font-size:12.5px;font-weight:700;color:#7f600d">61%</span>
-        </div>
-        <div style="font-size:11px;font-weight:700;color:#7f600d;letter-spacing:.05em;margin-bottom:6px">ראיות תומכות</div>
-        <div style="display:flex;flex-direction:column;gap:4px">
-          <span style="font-size:13px;color:#3a4450">✓ פערי עומס בין מטפלים בנתוני המערכת</span>
-          <span style="font-size:13px;color:#3a4450">✓ תחושת עומס שעלתה בראיונות</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- ===== chapter 15: appendix ===== -->
+  <h2 style="font-size:21px;font-weight:700;margin:36px 0 4px;padding-top:14px;border-top:2px solid #0F1D2E">נספח</h2>
+  <div style="text-align:center;font-size:11.5px;color:#606770;margin-bottom:16px">פרק 15</div>
 
-  <!-- ===== 6. mechanism map ===== -->
-  <h2 style="font-size:21px;font-weight:700;margin:36px 0 12px;padding-top:14px;border-top:2px solid #0F1D2E">6. מפת המנגנונים</h2>
-  <p style="font-size:14.5px;line-height:1.7;margin-bottom:16px">כך משתרשרות ההשערות זו מזו: מנגנון אחד מזין את הבא אחריו, עד לתוצאה הנצפית בשטח.</p>
-  <div style="display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;background:#F7F3EC;border-radius:10px;padding:22px 16px">
-    <span style="font-size:13.5px;font-weight:600;background:#fff;border:1px solid #e7e2d8;border-radius:8px;padding:10px 16px;white-space:nowrap">עומס באינטייק</span>
-    <span style="color:#7f600d;font-size:18px;padding:0 10px" aria-hidden="true">←</span>
-    <span style="font-size:13.5px;font-weight:600;background:#fff;border:1px solid #e7e2d8;border-radius:8px;padding:10px 16px;white-space:nowrap">זמן המתנה ממושך</span>
-    <span style="color:#7f600d;font-size:18px;padding:0 10px" aria-hidden="true">←</span>
-    <span style="font-size:13.5px;font-weight:600;background:#fff;border:1px solid #e7e2d8;border-radius:8px;padding:10px 16px;white-space:nowrap">שיעור No-show</span>
-    <span style="color:#7f600d;font-size:18px;padding:0 10px" aria-hidden="true">←</span>
-    <span style="font-size:13.5px;font-weight:700;background:#0F1D2E;color:#F5F1EA;border-radius:8px;padding:10px 16px;white-space:nowrap">נשירה ממוקדת קליטה</span>
-  </div>
-
-  <!-- ===== 7. prioritization ===== -->
-  <h2 style="font-size:21px;font-weight:700;margin:36px 0 12px;padding-top:14px;border-top:2px solid #0F1D2E">7. סדר עדיפויות להתערבות</h2>
-  <p style="font-size:14.5px;line-height:1.7;margin-bottom:16px">העדיפות נקבעת לפי שילוב של שלושה מדדים: כמה דגלים ההתערבות מסבירה, כמה קל ליישם אותה, וכמה אנחנו בטוחים בהשערה שביסודה.</p>
-  <table>
-    <thead><tr><th>נקודת התערבות</th><th>השפעה (Impact)</th><th>קלות יישום (Leverage)</th><th>ביטחון</th></tr></thead>
+  <div style="font-size:14px;font-weight:700;color:#0F1D2E;margin-bottom:6px">טבלת מקורות</div>
+  <table style="margin-bottom:18px">
+    <thead><tr><th>מקור</th><th>היקף</th><th>מועד</th><th>איכות</th></tr></thead>
     <tbody>
-      <tr><td>מסלול קליטה מזורז לפניות דחופות</td><td><span style="color:#c0392b;font-weight:700">גבוהה</span></td><td>בינונית</td><td>82%</td></tr>
-      <tr><td>תזכורות אוטומטיות לפני פגישת אינטייק</td><td>בינונית</td><td><span style="color:#1a754d;font-weight:700">גבוהה</span></td><td>74%</td></tr>
-      <tr><td>איזון מחדש של שיבוץ תיקים בין מטפלים</td><td>בינונית</td><td>בינונית</td><td>61%</td></tr>
-      <tr><td>איחוד תיעוד למניעת כפילויות</td><td>נמוכה</td><td>בינונית</td><td>48%</td></tr>
+      <tr><td>שאלון שדה</td><td>9 משיבים</td><td>מאי 2026</td><td>בינונית עד גבוהה</td></tr>
+      <tr><td>שאלון ניהול ביניים</td><td>4 משיבים</td><td>מאי 2026</td><td>בינונית</td></tr>
+      <tr><td>שאלון הנהלה</td><td>משיבה אחת</td><td>מאי 2026</td><td>מוגבלת</td></tr>
+      <tr><td>נתונים תפעוליים</td><td>68 פניות</td><td>מרץ עד מאי 2026</td><td>בינונית, תיעוד חלקי</td></tr>
+      <tr><td>שיחות עומק</td><td>4 שיחות</td><td>יוני 2026</td><td>איכותנית</td></tr>
+      <tr><td>מפת תהליך</td><td>סדנה אחת</td><td>יוני 2026</td><td>מוסכמת על המשתתפים</td></tr>
     </tbody>
   </table>
-  <p style="font-size:13px;color:#606770;margin-top:8px">מסלול הקליטה המזורז מדורג ראשון: הוא מסביר את מרבית הדגלים שזוהו, וההשערה שביסודו נתמכת ברמת ביטחון גבוהה.</p>
+  <p style="font-size:11.5px;color:#606770;margin-bottom:20px">כל השורות בטבלה הן <span class="demo-tag">נתון מדומה</span></p>
 
-  <!-- ===== 8. intervention points ===== -->
-  <h2 style="font-size:21px;font-weight:700;margin:36px 0 6px;padding-top:14px;border-top:2px solid #0F1D2E">8. צעדים מומלצים ל-90 הימים הקרובים</h2>
-  <p style="font-size:14.5px;line-height:1.7;margin-bottom:18px;text-align:center">לא רשימת המלצות כלליות, אלא כרטיסי פעולה: מה זיהינו, למה זה קורה, מה אפשר לעשות כבר עכשיו, ואיך נדע שהצלחנו.</p>
-
-  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:20px 22px;margin-bottom:18px;break-inside:avoid">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #eee">
-      <div style="display:flex;align-items:center;gap:9px">
-        <span style="font-size:12px;font-weight:700;color:#7f600d">01</span>
-        <span style="font-size:16px;font-weight:700;color:#0F1D2E">מסלול קליטה מזורז לפניות דחופות</span>
-      </div>
-      <div style="display:flex;gap:8px">
-        <span style="font-size:11.5px;font-weight:700;color:#c0392b;background:rgba(192,57,43,.1);padding:4px 10px;border-radius:14px">השפעה גבוהה</span>
-        <span style="font-size:11.5px;font-weight:700;color:#7f600d;background:rgba(212,160,23,.14);padding:4px 10px;border-radius:14px">מאמץ בינוני</span>
-      </div>
-    </div>
-
-    <div class="sec-head">מה זיהינו</div>
-    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-      <span style="font-size:14px;font-weight:600">עומס גבוה בשלב האינטייק</span>
-      <span style="font-size:12px;color:#7f600d;font-weight:700">ביטחון 82%</span>
-    </div>
-    <p style="font-size:13px;line-height:1.5;color:#5a6470;margin-bottom:14px">זמן ההמתנה הממוצע חורג מהיעד, ותורם ישירות לשיעור אי־ההגעה בפגישות הראשונות.</p>
-
-    <div class="sec-head">למה אנחנו חושבים שזה קורה</div>
-    <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:14px">
-      <span style="font-size:13px;color:#3a4450">עומס תיקים גבוה לרכז אינטייק</span>
-      <span style="font-size:13px;color:#3a4450">פער בין תפיסת ההנהלה לדיווחי השטח</span>
-      <span style="font-size:13px;color:#3a4450">זמני תגובה ארוכים בין הפניות</span>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
-      <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px">
-        <div class="sec-head">מה אפשר לעשות כבר עכשיו (30 יום)</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#1a754d;font-weight:700;font-size:13px" aria-hidden="true">✓</span><span style="font-size:13px;line-height:1.45">מיפוי שלבי האינטייק בפגישה אחת של 90 דקות</span></div>
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#1a754d;font-weight:700;font-size:13px" aria-hidden="true">✓</span><span style="font-size:13px;line-height:1.45">מדידת משך הזמן שלוקח כל שלב</span></div>
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#1a754d;font-weight:700;font-size:13px" aria-hidden="true">✓</span><span style="font-size:13px;line-height:1.45">זיהוי שלבים שאינם מוסיפים ערך</span></div>
-        </div>
-      </div>
-      <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px">
-        <div class="sec-head">מה דורש שינוי עמוק יותר</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#0F1D2E;font-weight:700;font-size:13px" aria-hidden="true">○</span><span style="font-size:13px;line-height:1.45">בחינת חלוקת התפקידים בצוות האינטייק</span></div>
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#0F1D2E;font-weight:700;font-size:13px" aria-hidden="true">○</span><span style="font-size:13px;line-height:1.45">הגדרת יעד זמן תגובה (SLA) לכל שלב</span></div>
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#0F1D2E;font-weight:700;font-size:13px" aria-hidden="true">○</span><span style="font-size:13px;line-height:1.45">בניית מסלול מהיר למקרים דחופים</span></div>
-        </div>
-      </div>
-    </div>
-
-    <table style="margin-bottom:14px">
-      <tr><td style="width:110px;font-weight:700;color:#7f600d;font-size:12px;border-bottom:none">אחריות</td><td style="border-bottom:none">מנהלת התוכנית ורכזת האינטייק</td></tr>
-      <tr><td style="font-weight:700;color:#7f600d;font-size:12px;border-bottom:none">מדד הצלחה</td><td style="border-bottom:none">קיצור זמן ההמתנה למקרים דחופים ב-30%</td></tr>
-    </table>
-
-    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px">
-      <div class="sec-head">איך ALNA יכולה לעזור</div>
-      <p style="font-size:13px;line-height:1.5;margin:0">הנחיית סדנת מיפוי תהליך, בניית תרשים זרימה, הגדרת מדדי מעקב, וליווי אחר השינוי במשך 60 יום.</p>
-    </div>
+  <div style="font-size:14px;font-weight:700;color:#0F1D2E;margin-bottom:8px">הגדרות קצרות</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">ממצא</div><p style="font-size:12.5px;line-height:1.5;margin:4px 0 0">מה שנצפה בפועל, עם מקור ותאריך. תיאור, לא פרשנות.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">מנגנון</div><p style="font-size:12.5px;line-height:1.5;margin:4px 0 0">הסבר אפשרי שמקשר בין תנאי ארגוני להתנהגות ולתוצאה. השערה, לא קביעה.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">המלצה</div><p style="font-size:12.5px;line-height:1.5;margin:4px 0 0">התערבות ממוקדת שמכוונת למנגנון, עם תנאי יישום ומדדים.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">פעולה</div><p style="font-size:12.5px;line-height:1.5;margin:4px 0 0">מה שהארגון החליט לעשות בפועל, עם אחראי ולוח זמנים.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">מדד הטמעה מול מדד תוצאה</div><p style="font-size:12.5px;line-height:1.5;margin:4px 0 0">מדד הטמעה בודק אם ההתערבות בוצעה, למשל כמה העברות קיבלו אישור. מדד תוצאה בודק אם משהו השתנה עבור המוטב, למשל זמן ההמתנה. בלי הראשון אי אפשר לפרש את השני.</p></div>
+    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px"><div class="sec-head">מהו PDC</div><p style="font-size:12.5px;line-height:1.5;margin:4px 0 0">מסגרת לאבחון תנאים שמאפשרים או חוסמים התנהגות בארגון. במקום לשאול מדוע אנשים אינם מבצעים, היא בודקת אם ברור מה נדרש, אם יש כלים, אם יש זמן, אם יש מדידה ואם יש משוב. במקרה זה התנאי המרכזי הוא A1, בהירות.</p></div>
   </div>
 
-  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:20px 22px;margin-bottom:18px;break-inside:avoid">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #eee">
-      <div style="display:flex;align-items:center;gap:9px">
-        <span style="font-size:12px;font-weight:700;color:#7f600d">02</span>
-        <span style="font-size:16px;font-weight:700;color:#0F1D2E">תזכורות אוטומטיות לפני פגישות</span>
-      </div>
-      <div style="display:flex;gap:8px">
-        <span style="font-size:11.5px;font-weight:700;color:#7f600d;background:rgba(212,160,23,.14);padding:4px 10px;border-radius:14px">השפעה בינונית</span>
-        <span style="font-size:11.5px;font-weight:700;color:#1a754d;background:rgba(31,138,91,.12);padding:4px 10px;border-radius:14px">מאמץ נמוך</span>
-      </div>
-    </div>
-
-    <div class="sec-head">מה זיהינו</div>
-    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-      <span style="font-size:14px;font-weight:600">שיעור No-show גבוה בפגישות ראשונות</span>
-      <span style="font-size:12px;color:#7f600d;font-weight:700">ביטחון 74%</span>
-    </div>
-    <p style="font-size:13px;line-height:1.5;color:#5a6470;margin-bottom:14px">חלק ניכר מהשעות המוקצות אינו מנוצל בשל אי־הגעה, בעיקר בפגישת האינטייק הראשונה.</p>
-
-    <div class="sec-head">למה אנחנו חושבים שזה קורה</div>
-    <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:14px">
-      <span style="font-size:13px;color:#3a4450">פערי תיאום בין קליטה לשיבוץ</span>
-      <span style="font-size:13px;color:#3a4450">היעדר תזכורות אוטומטיות למטופל</span>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
-      <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px">
-        <div class="sec-head">מה אפשר לעשות כבר עכשיו (30 יום)</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#1a754d;font-weight:700;font-size:13px" aria-hidden="true">✓</span><span style="font-size:13px;line-height:1.45">הפעלת תזכורת SMS יום לפני הפגישה</span></div>
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#1a754d;font-weight:700;font-size:13px" aria-hidden="true">✓</span><span style="font-size:13px;line-height:1.45">שיחת אישור טלפונית למקרים בסיכון גבוה</span></div>
-        </div>
-      </div>
-      <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px">
-        <div class="sec-head">מה דורש שינוי עמוק יותר</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#0F1D2E;font-weight:700;font-size:13px" aria-hidden="true">○</span><span style="font-size:13px;line-height:1.45">חיבור מערכת התזכורות ליומן השיבוץ</span></div>
-          <div style="display:flex;gap:8px;align-items:flex-start"><span style="color:#0F1D2E;font-weight:700;font-size:13px" aria-hidden="true">○</span><span style="font-size:13px;line-height:1.45">מדיניות שיבוץ מחדש אוטומטית במקרה של ביטול</span></div>
-        </div>
-      </div>
-    </div>
-
-    <table style="margin-bottom:14px">
-      <tr><td style="width:110px;font-weight:700;color:#7f600d;font-size:12px;border-bottom:none">אחריות</td><td style="border-bottom:none">רכזת האינטייק ואחראי המערכות</td></tr>
-      <tr><td style="font-weight:700;color:#7f600d;font-size:12px;border-bottom:none">מדד הצלחה</td><td style="border-bottom:none">90% מהפניות עוברות אינטייק תוך 7 ימים</td></tr>
-    </table>
-
-    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px">
-      <div class="sec-head">איך ALNA יכולה לעזור</div>
-      <p style="font-size:13px;line-height:1.5;margin:0">התאמת תבניות התזכורות, הגדרת כללי ההפעלה האוטומטית, ומעקב אחר שיעור ההגעה לאורך הרבעון.</p>
-    </div>
+  <div style="background:#F7F3EC;border-radius:10px;padding:16px 20px;break-inside:avoid">
+    <div style="font-size:13px;font-weight:700;color:#0F1D2E;margin-bottom:5px">דוח דמה</div>
+    <p style="font-size:12.5px;line-height:1.6;color:#5a6470;margin:0">כל הנתונים, השמות והציטוטים בדוח זה מדומים ונכתבו לצורך הדגמה בלבד. אין בדוח מידע אישי או רפואי.</p>
   </div>
 
-  <div style="border:1px solid #e7e2d8;border-radius:10px;padding:20px 22px;margin-bottom:8px;break-inside:avoid">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #eee">
-      <div style="display:flex;align-items:center;gap:9px">
-        <span style="font-size:12px;font-weight:700;color:#7f600d">03</span>
-        <span style="font-size:16px;font-weight:700;color:#0F1D2E">איזון מחדש של שיבוץ תיקים</span>
-      </div>
-      <div style="display:flex;gap:8px">
-        <span style="font-size:11.5px;font-weight:700;color:#7f600d;background:rgba(212,160,23,.14);padding:4px 10px;border-radius:14px">השפעה בינונית</span>
-        <span style="font-size:11.5px;font-weight:700;color:#7f600d;background:rgba(212,160,23,.14);padding:4px 10px;border-radius:14px">מאמץ בינוני</span>
-      </div>
-    </div>
-
-    <div class="sec-head">מה זיהינו</div>
-    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-      <span style="font-size:14px;font-weight:600">שיבוץ לא אחיד בין מטפלים</span>
-      <span style="font-size:12px;color:#7f600d;font-weight:700">ביטחון 61%</span>
-    </div>
-    <p style="font-size:13px;line-height:1.5;color:#5a6470;margin-bottom:14px">חלק מהמטפלים נושאים עומס תיקים גבוה משמעותית מהממוצע, מה שמעיב על זמינותם ואיכות הליווי.</p>
-
-    <div class="sec-head">למה אנחנו חושבים שזה קורה</div>
-    <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:14px">
-      <span style="font-size:13px;color:#3a4450">פערי עומס בין מטפלים בנתוני המערכת</span>
-      <span style="font-size:13px;color:#3a4450">תחושת עומס שעלתה בראיונות הצוות</span>
-    </div>
-
-    <table style="margin-bottom:14px">
-      <tr><td style="width:110px;font-weight:700;color:#7f600d;font-size:12px;border-bottom:none">אחריות</td><td style="border-bottom:none">מנהלי הצוותים הטיפוליים</td></tr>
-      <tr><td style="font-weight:700;color:#7f600d;font-size:12px;border-bottom:none">מדד הצלחה</td><td style="border-bottom:none">פער העומס בין מטפלים יורד בחצי</td></tr>
-    </table>
-
-    <div style="background:#F7F3EC;border-radius:8px;padding:13px 15px">
-      <div class="sec-head">איך ALNA יכולה לעזור</div>
-      <p style="font-size:13px;line-height:1.5;margin:0">בניית מודל שיבוץ מאוזן ומעקב תקופתי אחר עומס התיקים בין מטפלים.</p>
-    </div>
-  </div>
-
+  <!-- ===== closing CTA ===== -->
   <div style="background:#0F1D2E;border-radius:12px;padding:22px 24px;margin-top:22px;break-inside:avoid">
     <div style="font-size:15px;font-weight:700;color:#F5F1EA;margin-bottom:7px;text-align:center">השלב הבא: ליווי הטמעה</div>
-    <p style="font-size:13.5px;line-height:1.62;color:#b8c0c9;margin:0;text-align:center">צוות ALNA מלווה את הארגון ביישום כרטיסי הפעולה, בונה תוכנית עבודה מפורטת, ועוקב אחר ההשפעה בפועל על הדגלים לאורך זמן, כדי לוודא שרמת הביטחון בהשערות עולה עם הזמן ולא רק שהומלץ עליהן.</p>
+    <p style="font-size:13.5px;line-height:1.62;color:#b8c0c9;margin:0;text-align:center">צוות ALNA מלווה את הארגון ביישום ההמלצה, בונה תוכנית עבודה מפורטת, ועוקב אחר ההשפעה בפועל לאורך זמן, במחזורים חוזרים, כדי לוודא שהשינוי אכן מתחבר לעבודה בשטח.</p>
   </div>
 
 </doc-page>
