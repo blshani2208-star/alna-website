@@ -176,6 +176,7 @@ a:focus-visible, button:focus-visible {
   #implementation > div > div:nth-of-type(2) { grid-template-columns: 1fr 1fr !important; }
   #who > div > div:nth-of-type(2) { grid-template-columns: 1fr 1fr !important; }
   footer > div:first-child { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .card-grid-3 { grid-template-columns: 1fr 1fr !important; }
 
   /* collapse the sticky FAQ bar into a small corner FAB so it stops
      permanently covering a line of page content at every scroll position */
@@ -197,6 +198,7 @@ a:focus-visible, button:focus-visible {
   .beyond-report-grid { grid-template-columns: 1fr !important; }
   #implementation > div > div:nth-of-type(2) { grid-template-columns: 1fr !important; }
   #who > div > div:nth-of-type(2) { grid-template-columns: 1fr !important; }
+  .card-grid-3 { grid-template-columns: 1fr !important; }
   section, header > div { padding-left: 20px !important; padding-right: 20px !important; }
 }
 
