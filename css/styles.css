@@ -193,6 +193,7 @@ a:focus-visible, button:focus-visible {
   .faq-bar-label { display: none; }
   .faq-bar-icon { font-size: 19px !important; }
   .faq-panel { bottom: 78px !important; }
+  .header-row { flex-wrap: wrap !important; row-gap: 10px; }
 }
 @media (max-width: 560px) {
   .beyond-report-grid { grid-template-columns: 1fr !important; }
@@ -200,6 +201,8 @@ a:focus-visible, button:focus-visible {
   #who > div > div:nth-of-type(2) { grid-template-columns: 1fr !important; }
   .card-grid-3 { grid-template-columns: 1fr !important; }
   section, header > div { padding-left: 20px !important; padding-right: 20px !important; }
+  .header-actions { flex-wrap: wrap !important; justify-content: flex-end !important; row-gap: 8px; }
+  .header-cta { font-size: 13.5px !important; padding: 9px 16px !important; white-space: normal !important; }
 }
 
 /* ---- print (sample report page) ---- */
