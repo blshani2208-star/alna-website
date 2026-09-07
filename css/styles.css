@@ -1,4 +1,4 @@
-/* ALNA — production stylesheet
+/* ALNA, production stylesheet
    Self-hosted Heebo (variable font, weight axis 100-900) replaces the
    external Google Fonts request used in the original design. */
 
@@ -161,6 +161,37 @@ a:focus-visible, button:focus-visible {
 }
 .faq-open .faq-backdrop, .faq-open .faq-panel { display: block; }
 
+/* ---- language selector ---- */
+.language-menu { position: relative; flex-shrink: 0; }
+.language-menu summary {
+  list-style: none; cursor: pointer; user-select: none;
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-width: 54px; padding: 7px 11px;
+  color: #5f6974; background: rgba(255,255,255,.5);
+  border: 1px solid rgba(15,29,46,.15); border-radius: 7px;
+  font-size: 13.5px; font-weight: 700; line-height: 1.2;
+}
+.language-menu summary::-webkit-details-marker { display: none; }
+.language-menu summary::marker { content: ""; }
+.language-menu summary:focus-visible { outline: 3px solid rgba(212,160,23,.42); outline-offset: 2px; }
+.language-menu-chevron { font-size: 11px; color: #7f600d; transition: transform .18s ease; }
+.language-menu[open] .language-menu-chevron { transform: rotate(180deg); }
+.language-menu-panel {
+  position: absolute; z-index: 80; top: calc(100% + 8px); inset-inline-end: 0;
+  min-width: 138px; padding: 6px; background: #fff;
+  border: 1px solid rgba(15,29,46,.12); border-radius: 10px;
+  box-shadow: 0 16px 36px rgba(15,29,46,.18);
+}
+.language-option {
+  display: flex !important; align-items: center; justify-content: space-between; gap: 10px;
+  width: 100%; max-width: none !important; margin: 0 !important; padding: 9px 10px;
+  color: #273545 !important; border-radius: 7px; font-size: 14px !important;
+  font-weight: 600 !important; line-height: 1.25; white-space: nowrap;
+}
+a.language-option:hover { background: #F5F1EA; color: #0F1D2E !important; }
+.language-option.is-current { background: #F5F1EA; color: #0F1D2E !important; }
+.language-check { color: #7f600d; font-weight: 800; }
+
 /* ---- responsive ---- */
 @media (max-width: 900px) {
   .beyond-report-grid { grid-template-columns: 1fr 1fr !important; }
@@ -174,6 +205,7 @@ a:focus-visible, button:focus-visible {
   #flags > div { grid-template-columns: 1fr !important; }
   #implementation > div > div:first-child { grid-template-columns: 1fr !important; gap: 28px !important; }
   #implementation > div > div:nth-of-type(2) { grid-template-columns: 1fr 1fr !important; }
+  .implementation-summary { padding: 40px 28px !important; }
   #who > div > div:nth-of-type(2) { grid-template-columns: 1fr 1fr !important; }
   footer > div:first-child { grid-template-columns: 1fr !important; gap: 28px !important; }
   .card-grid-3 { grid-template-columns: 1fr 1fr !important; }
@@ -198,6 +230,7 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 560px) {
   .beyond-report-grid { grid-template-columns: 1fr !important; }
   #implementation > div > div:nth-of-type(2) { grid-template-columns: 1fr !important; }
+  .implementation-summary { padding: 32px 20px !important; }
   #who > div > div:nth-of-type(2) { grid-template-columns: 1fr !important; }
   .card-grid-3 { grid-template-columns: 1fr !important; }
   section, header > div { padding-left: 20px !important; padding-right: 20px !important; }

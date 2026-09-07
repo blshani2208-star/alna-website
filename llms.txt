@@ -1,42 +1,54 @@
 # ALNA Systems
 
-ALNA Systems היא פלטפורמת אבחון וליווי עבור ארגוני טיפול, רווחה ושיקום בישראל. הפלטפורמה מחברת בין נתונים תפעוליים, תהליכי עבודה, ההקשר הארגוני והידע של אנשי המקצוע כדי לזהות מה קורה בתהליך, מה עשוי לעמוד מאחורי הפערים, ומה נכון לשנות.
+ALNA Systems is a decision and implementation support platform for organizations delivering mental health, social care, rehabilitation, community, and other human services. It connects operational data, the service journey, organizational context, and the perspectives of frontline teams, middle managers, and senior leaders.
 
-האבחון הוא ההתחלה, לא כל המוצר. ALNA ממשיכה עם הארגון גם אחרי האבחון: עוזרת להפוך את הממצאים לשינוי שאפשר ליישם, חוזרת לבדוק מה השתנה, ושומרת את הלמידה לאורך זמן — כך שהארגון לא מתחיל בכל פעם מחדש. תהליך העבודה: אבחון → בחירת שינוי → יישום → בדיקה → למידה.
+The purpose is to help organizations understand where service delivery is breaking down, examine several plausible mechanisms, compare feasible actions, and learn from implementation. ALNA does not make decisions on behalf of the organization. It supports professional judgment with a structured diagnostic process and a record of what was recommended, chosen, implemented, and observed.
 
-ALNA משלבת שלושה מרכיבים:
-1. פלטפורמה ומתודולוגיית אבחון שיטתית.
-2. חיבור בין נתונים לבין הידע של אנשי המקצוע.
-3. ליווי אנושי מהבנת הממצאים ועד ליישום, ובדיקה של מה קרה בעקבות השינוי.
+ALNA is not a case management system, a clinical system, a dashboard, or a generic AI product. It can work alongside existing systems and may include technology or automation as one possible part of an intervention when the evidence and organizational context support it.
 
-ALNA אינה מערכת לניהול תיקים, מערכת רפואית או מוצר AI גנרי. היא אינה מחייבת החלפה של מערכות העבודה הקיימות, ואינה מסתיימת בדוח אבחון.
+The public website is available in English and Hebrew. English pages are under `/en/`; Hebrew pages are at the root.
 
-שפת האתר: עברית (he), כיוון קריאה: מימין לשמאל (RTL).
+## English pages
 
-## דפים עיקריים
+- [Home](https://alnasystems.com/en/): overview of ALNA, the service diagnostic process, implementation support, sectors, and frequently asked questions.
+- [Service Diagnostic](https://alnasystems.com/en/process-improvement.html): the focused diagnostic and improvement service for complex service pathways.
+- [How ALNA Thinks](https://alnasystems.com/en/how-alna-thinks.html): the reasoning model from finding to possible mechanism, action, implementation, outcome, and learning.
+- [Fit Check](https://alnasystems.com/en/fit-check.html): questions that help an organization decide whether a focused diagnostic conversation could be useful.
+- [Knowledge Hub](https://alnasystems.com/en/knowledge-hub.html): articles on organizational mechanisms and implementation.
+- [Same Problem, Different Causes, Different Actions](https://alnasystems.com/en/knowledge/matching-intervention-to-mechanism.html): matching an intervention to evidence, context, and the possible mechanism.
+- [Why a Good Recommendation Can Still Fail](https://alnasystems.com/en/knowledge/why-good-recommendations-fail.html): the gap between a decision and implementation.
+- [Did the Change Fail, or Was It Not Implemented?](https://alnasystems.com/en/knowledge/implementation-or-wrong-hypothesis.html): separating implementation fidelity from outcome.
+- [Illustrative Report](https://alnasystems.com/en/sample-report.html): a fictional English report showing findings, a possible mechanism, recommendation state, organizational decision, implementation measures, and outcome measures.
+- [About](https://alnasystems.com/en/about.html): the professional background and approach behind ALNA.
+- [Privacy Policy](https://alnasystems.com/en/privacy-policy.html)
+- [Accessibility Statement](https://alnasystems.com/en/accessibility.html)
 
-- [דף הבית](https://alnasystems.com/): הסבר על השיטה, האתגר שהארגונים פוגשים, איך התהליך האבחוני עובד (מה קורה, מה עשוי להסביר את זה, מה נכון לשנות, חזרה לבדיקה), מה מתקבל בסוף האבחון (דוח, סדרי עדיפויות, תוכנית פעולה), ואיך נראה הליווי אחרי האבחון — בחירת שינוי, יישום, בדיקה ולמידה. כולל שאלות נפוצות מלאות.
-- [דוגמת דוח אבחון](https://alnasystems.com/sample-report.html): דוגמה מלאה לדוח אבחון ארגוני של ALNA, כדי להמחיש את התוצר הסופי.
-- [מדיניות פרטיות](https://alnasystems.com/privacy-policy.html): אילו נתונים נאספים, כיצד נעשה בהם שימוש, וזכויות המשתמש.
-- [הצהרת נגישות](https://alnasystems.com/accessibility.html): אמצעי הנגישות שיושמו באתר ואופן פנייה בנושאי נגישות.
+## Core English positioning
 
-## למי מתאים
+ALNA serves leaders responsible for services, programs, quality, innovation, and organizational improvement. It is especially relevant where multidisciplinary work and complex pathways affect continuity, access, progression, or wellbeing.
 
-מרכזי טיפול ובריאות הנפש, שירותי שיקום ותעסוקה, שירותי רווחה וקהילה, עמותות ותוכניות חברתיות — כל ארגון שבו תהליכים מורכבים, עבודה רב-מקצועית וקבלת החלטות משפיעים על איכות הטיפול, השיקום והרווחה.
+Working sequence: service diagnostic, possible mechanisms, action alternatives, organization decision, implementation, outcome review, and organizational learning.
 
-## שאלות נפוצות (תמצית)
+## Hebrew overview
 
-- **האם ALNA היא מערכת AI?** לא. ALNA היא פלטפורמת אבחון וליווי. היא יכולה לשלב AI, אוטומציות וכלים טכנולוגיים כחלק מהפתרון, אך נקודת המוצא היא הבנת תהליכי העבודה והצרכים של הארגון.
-- **מה מקבלים בסוף התהליך?** דוח אבחון ארגוני עם תמונה מערכתית, חוזקות, צווארי בקבוק, מנגנונים מערכתיים, סדרי עדיפויות ותוכנית פעולה ראשונית, ובמידת הצורך גם ליווי ביישום.
-- **האם ALNA מלווה גם את היישום?** כן. האבחון הוא הבסיס, לא הסוף. ההטמעה יכולה להיות טכנולוגית ואנושית כאחד, לפי מה שיוצר שינוי אמיתי בארגון.
-- **מה קורה אחרי האבחון?** בוחרים יחד נקודה אחת או שתיים לשינוי, ALNA והליווי האנושי מסייעים להפוך את ההמלצה לשינוי שאפשר ליישם, ואז חוזרים לבדוק מה השתנה ומה אפשר ללמוד. שכבת המעקב ממשיכה להתפתח, עם כיוון לטווח ארוך של הסתמכות רבה יותר על מידע שכבר קיים בארגון.
-- **במה ALNA שונה מייעוץ ארגוני?** ALNA מתחילה באבחון שיטתי שמחבר בין נתונים, תהליכים והידע של אנשי המקצוע, ולאחר מכן ממשיכה, בהתאם לצורך, ללוות את יישום השינויים.
+ALNA Systems היא פלטפורמת אבחון וליווי לארגוני טיפול, רווחה, שיקום ושירותים חברתיים. הפלטפורמה מחברת בין נתונים תפעוליים, מסע השירות, ההקשר הארגוני והידע של אנשי המקצוע. המטרה היא להבין מה קורה בתהליך, אילו מנגנונים עשויים להסביר את הפערים, מה כדאי לנסות, ומה ניתן ללמוד לאחר היישום.
 
-## יצירת קשר
+עמודים מרכזיים בעברית:
 
-אימייל: alna.insights@gmail.com | טלפון: 054-520-6037 | קביעת שיחת היכרות: https://calendly.com/alna-insights
+- [דף הבית](https://alnasystems.com/)
+- [אבחון ושיפור תהליכים](https://alnasystems.com/process-improvement.html)
+- [איך ALNA חושבת](https://alnasystems.com/how-alna-thinks.html)
+- [בדיקת התאמה](https://alnasystems.com/fit-check.html)
+- [מרכז הידע](https://alnasystems.com/knowledge-hub.html)
+- [דוח לדוגמה](https://alnasystems.com/sample-report.html)
 
-## עמודים רשמיים
+## Contact
+
+Email: alna.insights@gmail.com
+Phone: +972-54-520-6037
+Introductory conversation: https://calendly.com/alna-insights
+
+Official pages:
 
 - LinkedIn: https://www.linkedin.com/company/alna-systems/
 - Facebook: https://www.facebook.com/profile.php?id=61592089082033

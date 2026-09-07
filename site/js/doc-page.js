@@ -1,11 +1,11 @@
 // @ds-adherence-ignore -- omelette starter scaffold (raw elements/hex/px by design)
 /* BEGIN USAGE */
 /**
- * <doc-page> — paged-document shell for printable HTML.
+ * <doc-page>, paged-document shell for printable HTML.
  *
  * On screen the document renders as a single continuous sheet on a desk
  * background (Google Docs' pageless view): you scroll one tall page card.
- * There is no manual page-splitting — write the whole document as normal
+ * There is no manual page-splitting, write the whole document as normal
  * flow inside <doc-page> and the browser's print engine paginates it at
  * export.
  *
@@ -29,22 +29,21 @@
  *   <script src="doc-page.js"></script>
  *
  * Attributes:
- *   size    — letter | a4 | legal (default letter)
- *   width / height — explicit CSS lengths, override `size`
- *   margin  — printable inset on every page (default 0.75in)
+ *   size, letter | a4 | legal (default letter)
+ *   width / height, explicit CSS lengths, override `size`
+ *   margin, printable inset on every page (default 0.75in)
  *
  * Running header/footer (optional): give an element `slot="header"` or
  * `slot="footer"` and it repeats on every printed page via
  * `position: fixed`. To keep body text from sliding under it, the
  * component prints inside a single-cell table whose <thead>/<tfoot> are
- * spacers sized to the header/footer height — browsers repeat thead/tfoot
+ * spacers sized to the header/footer height, browsers repeat thead/tfoot
  * on every page, so each sheet's content starts below the header and ends
  * above the footer. On screen the header/footer render once at the
  * top/bottom of the sheet.
  *
  * Author content as static HTML so the user can click-to-edit any text
- * directly. Do not set width/padding/background on the document body —
- * the component owns the sheet box.
+ * directly. Do not set width/padding/background on the document body,  * the component owns the sheet box.
  */
 /* END USAGE */
 
@@ -196,7 +195,7 @@
     }
 
     /** @page is a no-op inside shadow DOM, so the rule lives in <head>.
-     *  Re-appended on every sync so it stays last in source order — the
+     *  Re-appended on every sync so it stays last in source order, the
      *  @page cascade is source-order per descriptor, so this rule wins
      *  over any other @page rule in the document. */
     _syncPrintPageRule() {
@@ -223,7 +222,7 @@
      *  widowed/orphaned words in body copy (browsers without text-wrap
      *  support drop the declarations). Zero-specificity via :where() so
      *  any text-wrap authored on those elements wins; document-level so the
-     *  rules reach the slotted (light DOM) content — shadow styles can't.
+     *  rules reach the slotted (light DOM) content, shadow styles can't.
      *  data-omelette-injected marks the tag for the host editor to strip
      *  at serialize, so it is never written back as authored source. */
     _ensureTextWrapDefaults() {
