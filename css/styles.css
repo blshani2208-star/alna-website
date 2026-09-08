@@ -195,8 +195,8 @@ a.language-option:hover { background: #F5F1EA; color: #0F1D2E !important; }
 /* ---- mobile navigation ---- */
 .mobile-menu-toggle {
   display: none;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(15,29,46,.15);
@@ -204,6 +204,11 @@ a.language-option:hover { background: #F5F1EA; color: #0F1D2E !important; }
   background: rgba(255,255,255,.55);
   color: var(--navy);
   cursor: pointer;
+}
+.mobile-menu-toggle:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 .mobile-menu-icon,
 .mobile-menu-icon::before,
@@ -232,11 +237,17 @@ a.language-option:hover { background: #F5F1EA; color: #0F1D2E !important; }
   background: rgba(245,241,234,.98);
   border-bottom: 1px solid rgba(15,29,46,.1);
   box-shadow: 0 16px 28px rgba(15,29,46,.12);
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 .mobile-nav-panel.is-open { display: block; }
 .mobile-nav-links { display: grid; gap: 2px; }
 .mobile-nav-links .nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  box-sizing: border-box;
   padding: 11px 10px;
   color: #273545 !important;
   border-radius: 7px;
@@ -244,8 +255,18 @@ a.language-option:hover { background: #F5F1EA; color: #0F1D2E !important; }
   font-weight: 600;
 }
 .mobile-nav-links .nav-link:hover { background: #EAE6DF; }
+.mobile-nav-links .nav-link:focus-visible,
+.mobile-nav-cta:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  background: #EAE6DF;
+}
 .mobile-nav-cta {
   display: none;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  box-sizing: border-box;
   margin-top: 10px;
   padding: 11px 16px;
   border-radius: 7px;
@@ -304,7 +325,7 @@ a.language-option:hover { background: #F5F1EA; color: #0F1D2E !important; }
   .header-row > a img { height: 32px !important; }
   .header-actions { flex-wrap: nowrap !important; justify-content: flex-end !important; gap: 8px !important; }
   .header-cta { display: none !important; }
-  .mobile-nav-cta { display: block; }
+  .mobile-nav-cta { display: flex; }
 
   html, body { max-width: 100%; overflow-x: hidden; }
   main > section > div,

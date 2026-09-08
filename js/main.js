@@ -21,6 +21,7 @@
 
     menuPanel.id = 'mobile-navigation';
     menuPanel.className = 'mobile-nav-panel';
+    menuPanel.setAttribute('aria-hidden', 'true');
     menuLinks.className = 'mobile-nav-links';
 
     desktopNav.querySelectorAll('a').forEach(function (link) {
@@ -41,12 +42,18 @@
     headerActions.insertBefore(menuButton, headerActions.firstChild);
     header.appendChild(menuPanel);
 
+    var languageMenu = headerActions.querySelector('.language-menu');
+
     function setMobileMenuOpen(open) {
       menuPanel.classList.toggle('is-open', open);
+      menuPanel.setAttribute('aria-hidden', String(!open));
       menuButton.setAttribute('aria-expanded', String(open));
       menuButton.setAttribute('aria-label', open
         ? (isHebrew ? 'סגירת תפריט ניווט' : 'Close navigation menu')
         : (isHebrew ? 'פתיחת תפריט ניווט' : 'Open navigation menu'));
+      if (open && languageMenu && languageMenu.hasAttribute('open')) {
+        languageMenu.removeAttribute('open');
+      }
     }
 
     menuButton.addEventListener('click', function () {
@@ -57,6 +64,12 @@
     });
     document.addEventListener('click', function (event) {
       if (!header.contains(event.target)) setMobileMenuOpen(false);
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && menuPanel.classList.contains('is-open')) {
+        setMobileMenuOpen(false);
+        menuButton.focus();
+      }
     });
     window.addEventListener('resize', function () {
       if (window.innerWidth > 900) setMobileMenuOpen(false);
@@ -91,7 +104,7 @@
     });
   }
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && faqRoot.classList.contains('faq-open')) {
+    if (faqRoot && e.key === 'Escape' && faqRoot.classList.contains('faq-open')) {
       setFaqOpen(false);
     }
   });
