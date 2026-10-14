@@ -1,54 +1,25 @@
 # ALNA Systems
 
-ALNA Systems is a decision and implementation support platform for organizations delivering mental health, social care, rehabilitation, community, and other human services. It connects operational data, the service journey, organizational context, and the perspectives of frontline teams, middle managers, and senior leaders.
+> ALNA develops organisational diagnosis and process improvement software for care, rehabilitation and social care organisations. The system is in development. Hebrew and English information are available.
 
-The purpose is to help organizations understand where service delivery is breaking down, examine several plausible mechanisms, compare feasible actions, and learn from implementation. ALNA does not make decisions on behalf of the organization. It supports professional judgment with a structured diagnostic process and a record of what was recommended, chosen, implemented, and observed.
+## Product scope
 
-ALNA is not a case management system, a clinical system, a dashboard, or a generic AI product. It can work alongside existing systems and may include technology or automation as one possible part of an intervention when the evidence and organizational context support it.
+The initial stage focuses on one defined process: mapping the organisational context, connecting existing documents, operational data and staff questionnaire perspectives, examining possible explanations, and developing reasoned options for action. Outputs undergo professional review. Findings, hypotheses and missing information are distinguished.
 
-The public website is available in English and Hebrew. English pages are under `/en/`; Hebrew pages are at the root.
+Subsequent implementation, measurement and learning cycles are a separate continuation under development, agreed explicitly. The aim is to update the map using observed changes; causal impact is not assumed. Example reports contain fictional data and are not client outcomes.
 
-## English pages
-
-- [Home](https://alnasystems.com/en/): overview of ALNA, the service diagnostic process, implementation support, sectors, and frequently asked questions.
-- [Service Diagnostic](https://alnasystems.com/en/process-improvement.html): the focused diagnostic and improvement service for complex service pathways.
-- [How ALNA Thinks](https://alnasystems.com/en/how-alna-thinks.html): the reasoning model from finding to possible mechanism, action, implementation, outcome, and learning.
-- [Fit Check](https://alnasystems.com/en/fit-check.html): questions that help an organization decide whether a focused diagnostic conversation could be useful.
-- [Knowledge Hub](https://alnasystems.com/en/knowledge-hub.html): articles on organizational mechanisms and implementation.
-- [Same Problem, Different Causes, Different Actions](https://alnasystems.com/en/knowledge/matching-intervention-to-mechanism.html): matching an intervention to evidence, context, and the possible mechanism.
-- [Why a Good Recommendation Can Still Fail](https://alnasystems.com/en/knowledge/why-good-recommendations-fail.html): the gap between a decision and implementation.
-- [Did the Change Fail, or Was It Not Implemented?](https://alnasystems.com/en/knowledge/implementation-or-wrong-hypothesis.html): separating implementation fidelity from outcome.
-- [Illustrative Report](https://alnasystems.com/en/sample-report.html): a fictional English report showing findings, a possible mechanism, recommendation state, organizational decision, implementation measures, and outcome measures.
-- [About](https://alnasystems.com/en/about.html): the professional background and approach behind ALNA.
-- [Privacy Policy](https://alnasystems.com/en/privacy-policy.html)
-- [Accessibility Statement](https://alnasystems.com/en/accessibility.html)
-
-## Core English positioning
-
-ALNA serves leaders responsible for services, programs, quality, innovation, and organizational improvement. It is especially relevant where multidisciplinary work and complex pathways affect continuity, access, progression, or wellbeing.
-
-Working sequence: service diagnostic, possible mechanisms, action alternatives, organization decision, implementation, outcome review, and organizational learning.
-
-## Hebrew overview
-
-ALNA Systems היא פלטפורמת אבחון וליווי לארגוני טיפול, רווחה, שיקום ושירותים חברתיים. הפלטפורמה מחברת בין נתונים תפעוליים, מסע השירות, ההקשר הארגוני והידע של אנשי המקצוע. המטרה היא להבין מה קורה בתהליך, אילו מנגנונים עשויים להסביר את הפערים, מה כדאי לנסות, ומה ניתן ללמוד לאחר היישום.
-
-עמודים מרכזיים בעברית:
-
-- [דף הבית](https://alnasystems.com/)
-- [אבחון ושיפור תהליכים](https://alnasystems.com/process-improvement.html)
-- [איך ALNA חושבת](https://alnasystems.com/how-alna-thinks.html)
-- [בדיקת התאמה](https://alnasystems.com/fit-check.html)
-- [מרכז הידע](https://alnasystems.com/knowledge-hub.html)
-- [דוח לדוגמה](https://alnasystems.com/sample-report.html)
-
-## Contact
-
-Email: alna.insights@gmail.com
-Phone: +972-54-520-6037
-Introductory conversation: https://calendly.com/alna-insights
-
-Official pages:
-
-- LinkedIn: https://www.linkedin.com/company/alna-systems/
-- Facebook: https://www.facebook.com/profile.php?id=61592089082033
+## Main pages
+- [Overview (he)](https://alnasystems.com/)
+- [Initial diagnosis and subsequent learning (he)](https://alnasystems.com/process-improvement.html)
+- [Evidence and professional review (he)](https://alnasystems.com/how-alna-thinks.html)
+- [Conversation prompts for fit (he)](https://alnasystems.com/fit-check.html)
+- [Founder and approach (he)](https://alnasystems.com/about.html)
+- [Fictional example report (he)](https://alnasystems.com/sample-report.html)
+- [Professional knowledge (he)](https://alnasystems.com/knowledge-hub.html)
+- [Overview (en)](https://alnasystems.com/en/)
+- [Initial diagnosis and subsequent learning (en)](https://alnasystems.com/en/process-improvement.html)
+- [Evidence and professional review (en)](https://alnasystems.com/en/how-alna-thinks.html)
+- [Conversation prompts for fit (en)](https://alnasystems.com/en/fit-check.html)
+- [Founder and approach (en)](https://alnasystems.com/en/about.html)
+- [Fictional example report (en)](https://alnasystems.com/en/sample-report.html)
+- [Professional knowledge (en)](https://alnasystems.com/en/knowledge-hub.html)
